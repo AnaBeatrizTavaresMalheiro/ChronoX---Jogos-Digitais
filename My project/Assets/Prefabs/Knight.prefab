@@ -135,11 +135,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   visionRadius: 10
-  attackPoint: {fileID: 797374801660319471}
-  attackRadius: 0.5
+  attackOffset: 1
+  attackRadius: 1
   Player:
     serializedVersion: 2
     m_Bits: 1024
+  attackHitDelay: 0.3
+  attackAnimDuration: 0.4
   attackCooldown: 1
 --- !u!114 &5241279292616545702
 MonoBehaviour:

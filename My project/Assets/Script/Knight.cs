@@ -5,13 +5,22 @@ using UnityEngine;
 public class Knight : MonoBehaviour {
     private Transform target; // variável para saber quem o inimigo vai perseguir
     private Animator animator; // pode fazer as animações
+
+    [Header("Movimento")] // cria um cabeçalho no Inspector para variáveis de movimento
     public float speed; // velocidade do inimigo
     public float visionRadius; // radio de visão para o inimigo ver o player
-    public GameObject attackPoint; // ponto de ataque que vai ser criado na Unity como filho do inimigo
+
+    [Header("Ataque")] // cria um cabeçalho no Inspector para variáveis de ataque
+    public float attackOffset; // distância horizontal do ponto de ataque a partir do centro
     public float attackRadius; // raio para o ataque da espada
     public LayerMask Player; // saber a layer do player para atacar ele
+
+    [Header("Tempos")] // cabeçalho para variáveis de tempo
+    public float attackHitDelay; // isso para o ataque sair antes de dar o dano
+    public float attackAnimDuration; // tempo que dura a animação de ataque
     public float attackCooldown; // cooldown entre um ataque e outro
-    private bool isAtacking = false; // saber se esta na animação de atacar ou não
+
+    private bool canAttack = true; // saber se ele pode atacar novamente ou não
 
     void Start() {
         animator = GetComponent<Animator>();
@@ -21,13 +30,14 @@ public class Knight : MonoBehaviour {
     void Update() {
         LookPlayer();
 
-        if(this.target != null) { // se tiver um alvo
-            float distance = Vector2.Distance(attackPoint.transform.position, target.position); // distancia entre o player e a espada do knight
+        if(target != null) { // se tiver um alvo
+            FaceTarget();
 
-            if(distance <= attackRadius) { // se tiver no alcance da espada
+            Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // vai fazer pela colisão com o Player
+            if(hits.Length > 0) { // se colidir com o Player
                 Attack(); // ataca
             }
-            else {
+            else { // se não colidir
                 FollowPlayer(); // segue o player
             }
         }
@@ -36,7 +46,7 @@ public class Knight : MonoBehaviour {
         }
     }
 
-    private void FollowPlayer() {
+    private void FaceTarget() {
         Vector3 scale = transform.localScale; // pegar a posição
         if(target.position.x > transform.position.x) {
             scale.x = Mathf.Abs(scale.x);
@@ -45,7 +55,14 @@ public class Knight : MonoBehaviour {
             scale.x = -Mathf.Abs(scale.x);
         }
         transform.localScale = scale;
+    }
 
+    private Vector2 GetAttackPosition() {
+        float dir = Mathf.Sign(transform.localScale.x); // obtém direção: 1 para direita, -1 para esquerda
+        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
+    }
+
+    private void FollowPlayer() {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime); // atualizar sua posição para seguir o player
         animator.SetBool("walk", true);
     }
@@ -53,11 +70,6 @@ public class Knight : MonoBehaviour {
     private void StopMoving() { // função para ele ficar parado quando não ver o player
         // fica parado, não faz nada
         animator.SetBool("walk", false);
-    }
-
-    private void OnDrawGizmos() { // apenas representação visual desse raio na unity para testar
-        Gizmos.DrawWireSphere(this.transform.position, this.visionRadius);
-        Gizmos.DrawWireSphere(attackPoint.transform.position, this.attackRadius);
     }
 
     private void LookPlayer() {
@@ -73,26 +85,40 @@ public class Knight : MonoBehaviour {
     }
 
     private void Attack() {
-        if(isAtacking) {
+        if(!canAttack) {
             return; // se estiver atacando retorna
         }
-        isAtacking = true; // seta para true
+        canAttack = false; // não pode mais atacar, está em cooldown
 
         animator.SetBool("walk", false);
         animator.SetTrigger("attack");
 
-        Collider2D[] player = Physics2D.OverlapCircleAll(attackPoint.transform.position, attackRadius, Player);
+        Invoke("PerformAttackHit", attackHitDelay);
+        Invoke("EndAttackAnim", attackAnimDuration);
+        Invoke("ResetCanAttack", attackCooldown);
+    }
+
+    private void EndAttackAnim() {
+        animator.CrossFade("knight_idle", 0f); // faz a transição imediata para estado "knight_idle"
+    }
+
+    private void PerformAttackHit() {
+        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player);
         foreach (Collider2D playerGameObject in player) {
             PlayerHealth.Instance.TakeDamage();
         }
-        Invoke("EndAttack", attackCooldown);
     }
 
-    private void EndAttack() {
-        isAtacking = false;
-        // apenas setar como falso a animação de atacar
+    private void ResetCanAttack() { // após a cooldown de ataque
+        canAttack = true; // e pode atacar novamente
     }
 
-    
+    private void OnDrawGizmosSelected() { // apenas representação visual desse raio na unity para testar
+        Gizmos.color = Color.yellow; // define a cor como amarelo para identificação
+        Gizmos.DrawWireSphere(transform.position, visionRadius); // raio de visão
+
+        Gizmos.color = Color.red; // define a cor como vermelha
+        Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius); // raio de ataque
+    }
 
 }
