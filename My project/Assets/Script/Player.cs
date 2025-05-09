@@ -90,8 +90,11 @@ public class Player : MonoBehaviour {
             PlayerHealth.Instance.TakeDamage();
             PlayerHealth.Instance.TakeDamage();
         }
-        // if(collision.gameObject.tag == "Knight") { // se ele cair nos espinhos
-        //     KnightHealth.Instance.TakeDamage();
+        // if(collision.gameObject.tag == "Knight") { 
+        //     KnightHealth kh = collision.gameObject.GetComponent<KnightHealth>();
+            // if (kh != null) {
+            //     kh.TakeDamage();
+            // }
         // }
 
     }

@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class KnightHealth : MonoBehaviour {
 
-    public static KnightHealth Instance; // instanciar para poder acessar todos os métodos públicos de qualquer outra classe
     private Animator animator; // pode fazer as animações
     public int vidas = 2; // quantidade de vidas do knight
     public float dieDuration; // duração da animação de morrer para o inimigo sumir depois
 
-    private void Awake() { // garantir que so vai ter uma instancia
-        if (Instance == null) {
-            Instance = this;
-        }
-        else {
-            Destroy(gameObject);
-        }
+    private void Awake() { 
+        animator = GetComponent<Animator>();
     }
 
     void Start() {
-        animator = GetComponent<Animator>();   
+           
     }
 
     void Update() {

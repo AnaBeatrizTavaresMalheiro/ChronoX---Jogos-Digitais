@@ -22,6 +22,7 @@ public class Knight : MonoBehaviour {
 
     private bool canAttack = true; // saber se ele pode atacar novamente ou não
 
+
     void Start() {
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); // targetar o player para ele seguir
