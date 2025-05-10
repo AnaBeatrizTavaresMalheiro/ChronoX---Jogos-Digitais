@@ -1,38 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class Player : MonoBehaviour {
 
-    public float speed = 5f; // velocidade personagem, public para poder mudar la no unity    public float JumpForce; // velocidade do pulo
+    private SpriteRenderer sr; // para rotacionar o player quando vira de lado
     private Rigidbody2D rb2d; // me permite manipular qualquer variavel no rigidbody la do inspector
+    private Animator animator; // poder animar o player
+
+    [Header("Movimento")] // cria um cabeçalho no Inspector para variáveis de movimento
+    public float speed = 5f; // velocidade personagem, public para poder mudar la no unity    public float JumpForce; // velocidade do pulo
+    public float speedClimb = 4f; // velocidade para escalar a escada
+    public float jump = 10f; // é a força do pulo do personagem
+
+    [Header("Ataque")] // cria um cabeçalho no Inspector para variáveis de ataque
+    public float attackOffset; // distância horizontal do ponto de ataque a partir do centro
+    public float attackRadius; // raio para o ataque da espada
+    public LayerMask Knight; // saber a layer do player para atacar ele
+
+    [Header("Tempos")] // cabeçalho para variáveis de tempo
+    public float attackHitDelay; // isso para o ataque sair antes de dar o dano
+    public float attackAnimDuration; // tempo que dura a animação de ataque
+    public float attackCooldown; // cooldown entre um ataque e outro
+
     public bool isJumping; // saber se ele esta pulando ou nao
     public bool doubleJump; // saber se ele esta dando um pulo duplo ou nao
-    public float jump = 10f; // é a força do pulo do personagem
     public bool inStairs; // saber se o personagem esta em cima da escada
-    public float speedClimb = 4f; // velocidade para escalar a escada
-    public int lifes = 3; // quantidade de vidas
     private bool facingLeft = false; // saber qual lado ta
-    private SpriteRenderer sr; // para rotacionar o player quando vira de lado
+    private bool canAttack = true; // saber se o player pode atacar ou não
 
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update() {
-        Move();
-        Jump();
-        Climb();
+        Move(); // se mover
+        Jump(); // pular
+        Climb(); // escalar
+
+        if(Input.GetMouseButtonDown(0)) { // se apertar o botão esquerdo do mouse
+            Attack(); // ataca
+        }
+
     }
 
     void Move() {
-        // O GetAxis ja detecta a movimentacao e teclas, ta pronta na Unity
+        // o GetAxis ja detecta a movimentacao e teclas, ta pronta na Unity
         float h = Input.GetAxis("Horizontal");
         Vector3 movement = new Vector3(h, 0f, 0f); // recebe apenas movimentacao lateral (x) -> y e z ficam em 0
         transform.position += movement * Time.deltaTime * speed; // adiciona velocidade
+
+        bool running = Mathf.Abs(h) > 0.01f; // saber se esta se movendo, true or false
+        animator.SetBool("run", running);
+
         if (h > 0f) {
             facingLeft = false;
         }
@@ -47,6 +72,7 @@ public class Player : MonoBehaviour {
         if (Input.GetButtonDown("Jump")) { // ja eh pre setado como space
             if (isJumping == false) {
                 rb2d.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse); // so muda o eixo Y (eixo X = 0f)
+                animator.SetBool("jump", true);
                 doubleJump = true;
             }
             else {
@@ -62,12 +88,17 @@ public class Player : MonoBehaviour {
         if (inStairs) {
             Vector3 movement = new Vector3(0f, Input.GetAxis("Vertical"), 0f); // recebe apenas movimentacao lateral (x) - y e z ficam em 0
             transform.position += movement * Time.deltaTime * speedClimb; // adiciona velocidade
+            animator.SetBool("climb", true);
+        }
+        else {
+            animator.SetBool("climb", false);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.layer == 6 || collision.gameObject.layer == 9) { // 6 é o layer que eu criei para Ground e 9 para plataforma
             isJumping = false;
+            animator.SetBool("jump", false);
         }
         if(collision.gameObject.tag == "Lava"){ // se ele cair na lava
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse); // para dar um pulinho depois de bater
@@ -120,12 +151,43 @@ public class Player : MonoBehaviour {
         }
     }
 
-    // private void OnDrawGizmos() { // apenas representação visual desse raio na unity para testar
-    //     Gizmos.DrawWireSphere(this.transform.position, this.visionRadius);
-    // }
+    private Vector2 GetAttackPosition() {
+        float dir = Mathf.Sign(transform.localScale.x); // obtém direção: 1 para direita, -1 para esquerda
+        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
+    }
 
     private void Attack() {
-        //
+        if(!canAttack) { // se estiver atacando 
+            return; // retorna
+        }
+        canAttack = false;
+
+        Invoke("PerformAttackHit", attackHitDelay);
+        Invoke("EndAttackAnim", attackAnimDuration);
+        Invoke("ResetCanAttack", attackCooldown);
+    }
+
+    private void EndAttackAnim() { // chamar a animação de idle depois do ataque
+        animator.CrossFade("player_idle", 0f); // faz a transição imediata para estado "player_idle"
+    }
+
+    private void PerformAttackHit() {
+        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Knight);
+        foreach (Collider2D playerGameObject in player) {
+            var each_knight = playerGameObject.GetComponent<KnightHealth>();
+            if(each_knight != null) {
+                each_knight.TakeDamage();
+            }
+        }
+    }
+
+    private void ResetCanAttack() {
+        canAttack = true;
+    }
+
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius);
     }
 
 }

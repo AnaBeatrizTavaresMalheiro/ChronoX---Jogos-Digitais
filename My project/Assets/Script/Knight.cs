@@ -35,7 +35,7 @@ public class Knight : MonoBehaviour {
             FaceTarget();
 
             Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // vai fazer pela colisão com o Player
-            if(hits.Length > 0) { // se colidir com o Player
+            if(hits.Length > 0) { // se colidir com o Player (o attackRadius)
                 Attack(); // ataca
             }
             else { // se não colidir
@@ -47,13 +47,13 @@ public class Knight : MonoBehaviour {
         }
     }
 
-    private void FaceTarget() {
+    private void FaceTarget() { // mudar a escala quando virar de lado
         Vector3 scale = transform.localScale; // pegar a posição
-        if(target.position.x > transform.position.x) {
-            scale.x = Mathf.Abs(scale.x);
+        if(target.position.x > transform.position.x) { // se o player estiver na esquerda
+            scale.x = Mathf.Abs(scale.x); // fica normal
         }
-        else {
-            scale.x = -Mathf.Abs(scale.x);
+        else { // se o player estiver na direita
+            scale.x = -Mathf.Abs(scale.x); // inverte o lado
         }
         transform.localScale = scale;
     }
@@ -63,7 +63,7 @@ public class Knight : MonoBehaviour {
         return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
     }
 
-    private void FollowPlayer() {
+    private void FollowPlayer() { // função para seguir a posição do jogador
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime); // atualizar sua posição para seguir o player
         animator.SetBool("walk", true);
     }
@@ -73,7 +73,7 @@ public class Knight : MonoBehaviour {
         animator.SetBool("walk", false);
     }
 
-    private void LookPlayer() {
+    private void LookPlayer() { // função para procurar o player
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, visionRadius); // pega todos os colisores presentes na cena -> player, ground etc
         target = null; // seta como null
 
@@ -92,18 +92,18 @@ public class Knight : MonoBehaviour {
         canAttack = false; // não pode mais atacar, está em cooldown
 
         animator.SetBool("walk", false);
-        animator.SetTrigger("attack");
+        animator.SetTrigger("attack"); // realiza a animação de ataque
 
-        Invoke("PerformAttackHit", attackHitDelay);
+        Invoke("PerformAttackHit", attackHitDelay); // espera um pouco para atacar com o attackHitDelay
         Invoke("EndAttackAnim", attackAnimDuration);
         Invoke("ResetCanAttack", attackCooldown);
     }
 
-    private void EndAttackAnim() {
+    private void EndAttackAnim() { // animação para quando acabar o ataque
         animator.CrossFade("knight_idle", 0f); // faz a transição imediata para estado "knight_idle"
     }
 
-    private void PerformAttackHit() {
+    private void PerformAttackHit() { // função para atacar o player e dar dano nele
         Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player);
         foreach (Collider2D playerGameObject in player) {
             PlayerHealth.Instance.TakeDamage();
