@@ -128,7 +128,6 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.layer == 6 || collision.gameObject.layer == 9) {
             // garante que enquanto em contato com o chão isJumping fique false
             isJumping = false;
-            animator.SetBool("jump", false);
         }
     }
 

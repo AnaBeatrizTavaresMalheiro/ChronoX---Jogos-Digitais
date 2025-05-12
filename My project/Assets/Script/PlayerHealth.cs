@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
 
     public float dieDuration = 0.8f; // saber o tempo de animação de morte
     public float invulnDuration = 0.6f; // tem de invulnerabilidade
+    public float hurtDuration    = 0.5f; // duração exata do seu clip "hurt"
+
     public bool isInvulnerable = false; // saber se esta invulneravel ou nao
     private bool isDead = false; // saber se morreu ou não
 
@@ -41,6 +43,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if(vidas >= 1) {
             animator.SetTrigger("hurt");
+            Invoke(nameof(EndHurtAnim), hurtDuration);
         }
         if (vidas <= 0) {
             isDead = true; // morreu
@@ -54,6 +57,11 @@ public class PlayerHealth : MonoBehaviour
     void Die() {
         PlayerPrefs.SetString("Fase", SceneManager.GetActiveScene().name); // pega o nome da cena atual e coloca na variavel Fase
         SceneManager.LoadScene("GameOver"); // chama o GameOver
+    }
+
+    private void EndHurtAnim() {
+        // volta para idle (ou outro estado padrão) quando o hurt terminar
+        animator.CrossFade("player_idle", 0f);
     }
 
     private void EndInvulnerability() { // invulnerabilidade
