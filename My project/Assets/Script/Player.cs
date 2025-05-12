@@ -121,13 +121,15 @@ public class Player : MonoBehaviour {
             PlayerHealth.Instance.TakeDamage();
             PlayerHealth.Instance.TakeDamage();
         }
-        // if(collision.gameObject.tag == "Knight") { 
-        //     KnightHealth kh = collision.gameObject.GetComponent<KnightHealth>();
-            // if (kh != null) {
-            //     kh.TakeDamage();
-            // }
-        // }
 
+    }
+
+    void OnCollisionStay2D(Collision2D collision) {
+        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 9) {
+            // garante que enquanto em contato com o chão isJumping fique false
+            isJumping = false;
+            animator.SetBool("jump", false);
+        }
     }
 
     // metodo para detectar sempre que o personagem deixar de tocar em alguma coisa
@@ -152,8 +154,12 @@ public class Player : MonoBehaviour {
     }
 
     private Vector2 GetAttackPosition() {
-        float dir = Mathf.Sign(transform.localScale.x); // obtém direção: 1 para direita, -1 para esquerda
-        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
+        if(facingLeft) { // se estiver virado para a esquerda
+            return (Vector2)transform.position + Vector2.left  * attackOffset; // retorna posição de ataque em mundo
+        }
+        else { // se estiver virado para a direita
+            return (Vector2)transform.position + Vector2.right * attackOffset; // retorna posição de ataque em mundo
+        }
     }
 
     private void Attack() {
@@ -172,18 +178,18 @@ public class Player : MonoBehaviour {
         animator.CrossFade("player_idle", 0f); // faz a transição imediata para estado "player_idle"
     }
 
-    private void PerformAttackHit() {
-        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Knight);
+    private void PerformAttackHit() { // realizar o ataque
+        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Knight); // procura com a layer Knight
         foreach (Collider2D playerGameObject in player) {
-            var each_knight = playerGameObject.GetComponent<KnightHealth>();
+            var each_knight = playerGameObject.GetComponent<KnightHealth>(); // cada knight é próprio, tem suas próprias vidas e tomam seu próprio dano
             if(each_knight != null) {
-                each_knight.TakeDamage();
+                each_knight.TakeDamage(); // da dano
             }
         }
     }
 
-    private void ResetCanAttack() {
-        canAttack = true;
+    private void ResetCanAttack() { // retar o ataque do player
+        canAttack = true; // agora pode atacar dnv
     }
 
     private void OnDrawGizmosSelected() {

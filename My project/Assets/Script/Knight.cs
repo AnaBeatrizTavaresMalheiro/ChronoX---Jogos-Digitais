@@ -122,4 +122,10 @@ public class Knight : MonoBehaviour {
         Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius); // raio de ataque
     }
 
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Hole") { // 6 é o layer que eu criei para Ground e 9 para plataforma
+            Destroy(gameObject);
+        }
+    }
+
 }

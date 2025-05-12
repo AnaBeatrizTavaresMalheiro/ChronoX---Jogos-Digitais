@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5115922246198861002}
   - component: {fileID: 1726583943629056975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DinoHead
   m_TagString: DinoHead
   m_Icon: {fileID: 0}

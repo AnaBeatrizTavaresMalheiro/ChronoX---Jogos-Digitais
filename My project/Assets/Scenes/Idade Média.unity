@@ -45735,6 +45735,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 773646193724780075, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
+      propertyPath: dieDuration
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 773646193724780075, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: 'iconesVidas.Array.data[0]'
       value: 
       objectReference: {fileID: 1558614912}
@@ -45752,11 +45756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.59
+      value: 56.73
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -74698,7 +74702,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 414630023013217918, guid: c56065e8e0bb7894ab8a65e4d67aa943, type: 3}
       propertyPath: m_Name
-      value: Minotaur - Sprite Sheet_0 (1)
+      value: Minotaur
       objectReference: {fileID: 0}
     - target: {fileID: 819482810367992208, guid: c56065e8e0bb7894ab8a65e4d67aa943, type: 3}
       propertyPath: m_LocalScale.x
