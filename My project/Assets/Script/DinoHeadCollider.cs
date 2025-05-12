@@ -19,6 +19,11 @@ public class DinoHeadCollider : MonoBehaviour {
             }
             GetComponentInParent<Rigidbody2D>().AddForce(Vector2.up * 15f, ForceMode2D.Impulse);
         }
+        else if (collider.gameObject.tag == "BossHead") {
+            Boss_PreHistoria boss_preHistoria = collider.GetComponentInParent<Boss_PreHistoria>();
+            boss_preHistoria.Live();
+            GetComponentInParent<Rigidbody2D>().AddForce(Vector2.up * 15f, ForceMode2D.Impulse);
+        }
     }
 
 }

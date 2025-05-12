@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 5327810061155891425}
   - component: {fileID: 332607676710766793}
   - component: {fileID: 5273984948371926600}
+  - component: {fileID: 1782203336423616454}
   m_Layer: 0
   m_Name: PlayerFeet
   m_TagString: Untagged
@@ -181,6 +182,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c5304d8e7156e0408185e09e4c601a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1782203336423616454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6080729395406561105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685a741d3034561488f763383a87b04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6531420706967181749

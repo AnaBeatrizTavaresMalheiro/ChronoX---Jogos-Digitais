@@ -14,6 +14,10 @@ TagManager:
   - Smash
   - Hole
   - Knight
+  - HeartBoss
+  - HeartBoss_1
+  - BossHead
+  - PlayerFeet
   layers:
   - Default
   - TransparentFX
