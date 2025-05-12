@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Minotauro Morrendo
+  m_Name: minotauro_hurt
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,33 +21,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5745062583267079654, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.083333336
-      value: {fileID: -370134385579418215, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.16666667
-      value: {fileID: -466693227434956389, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.25
-      value: {fileID: -3881122942435717311, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.33333334
-      value: {fileID: -4994888274227490456, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.41666666
       value: {fileID: 435628095085995054, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.5
+    - time: 0.016666668
       value: {fileID: -7575511959065984110, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.5833333
+    - time: 0.033333335
       value: {fileID: -4286342020335714121, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.6666667
+    - time: 0.05
       value: {fileID: -3759126788117806630, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.75
+    - time: 0.06666667
       value: {fileID: -3768335509562305569, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - time: 0.8333333
+    - time: 0.083333336
       value: {fileID: -8644788785254715843, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 12
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -64,11 +54,6 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5745062583267079654, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - {fileID: -370134385579418215, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - {fileID: -466693227434956389, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - {fileID: -3881122942435717311, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
-    - {fileID: -4994888274227490456, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
     - {fileID: 435628095085995054, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
     - {fileID: -7575511959065984110, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
     - {fileID: -4286342020335714121, guid: 51d2ad38e0a458e4fa7bb3c22d422809, type: 3}
@@ -80,7 +65,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9166666
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -99,4 +84,32 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.083333336
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
