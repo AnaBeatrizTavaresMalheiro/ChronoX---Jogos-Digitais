@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638826767598537433
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 272
       width: 32
       height: 25
-    spriteID: e6f03b8e4724a3147a03bad2120f8e19
+    spriteID: 2a51fc9f198cc7140b6434fe23011fcf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 305
       width: 32
       height: 25
-    spriteID: e304798b91eb2804ebaf12f974094495
+    spriteID: 3868d4387112b6e47999551342d7af18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 262
       width: 32
       height: 23
-    spriteID: 364b9a3f78c492340b09a3e84e7e53e6
+    spriteID: 9e8a1577f96e54c40bf45ec9ef85170a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 70
       width: 32
       height: 24
-    spriteID: b26e6e4019a4de2478b50b4704299f99
+    spriteID: b9ac17d00967bff4c937229a9d41e0b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 338
       width: 32
       height: 25
-    spriteID: 4a80f872abf585d4c89f07a7d69d908f
+    spriteID: 56fa7b246d471df448bf5349332ff7a1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 102
       width: 32
       height: 24
-    spriteID: 53318d246d0e6f9428c4b7a0bb83fe41
+    spriteID: e897f179ed21cb442ab08a29ba133496
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 371
       width: 32
       height: 25
-    spriteID: c29e7867c31f14f4f9a3f7a5ab46285d
+    spriteID: 0ebcc268ae437de4d870dd74d9d3c234
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 134
       width: 32
       height: 24
-    spriteID: f9e9db87567376f49bd913b62626d52f
+    spriteID: a298f140bf91f2740994ef6f5a9adc32
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 166
       width: 32
       height: 24
-    spriteID: 2ad0c7023dc92da498ae5989748b815e
+    spriteID: 00395e46a2ae5d640ab32c1c5a3ee092
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 404
       width: 32
       height: 25
-    spriteID: e8f019631f60ec84399c6a66c743f060
+    spriteID: 9eff52866ae082942b641a589a37d8f7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 437
       width: 32
       height: 25
-    spriteID: d6d815cd9341bc042b14e378cd1275b0
+    spriteID: a802f21c6c5bc9b468207e921370becd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 198
       width: 32
       height: 24
-    spriteID: c559542fc9c59f842b404655882fe14f
+    spriteID: 8865c1d6942e84b4d9e47e7dbfcce3c4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 293
       width: 32
       height: 23
-    spriteID: 6c32cb130ceabdc4d93df2183a84eb34
+    spriteID: f07ea706aa84a5e42a4346277223134a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 324
       width: 32
       height: 23
-    spriteID: 1a54caf8ee67cf34ea38f4721c6cb3ef
+    spriteID: 4d15d7e6e890eac4083bba452f0453b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 32
       width: 35
       height: 30
-    spriteID: ce12e016e15ae5246aa3306a4f48661f
+    spriteID: 6a10b68ddc9620c4a960e0113e762881
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 390
       width: 56
       height: 37
-    spriteID: 7f830c2c64926844cbb68027885d6024
+    spriteID: 8fec003b716988d43b86ddad0c0d0fb3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 284
       width: 56
       height: 46
-    spriteID: 6f592a3d58a3a984886accc1231c4cab
+    spriteID: d2c338213f3f8bb42a5a04e0ed6fd0bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -470,7 +470,7 @@ ScriptedImporter:
       y: 224
       width: 56
       height: 52
-    spriteID: c595511a8b329654db46d24bff337ea7
+    spriteID: f0b0e716e1e311b4ea282d01b2dd1dd3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -490,7 +490,7 @@ ScriptedImporter:
       y: 160
       width: 56
       height: 56
-    spriteID: 75736a2caf02fdd46bccc714fbacdf41
+    spriteID: 83e9e89f17dacdb44a0f931136ac278e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -510,7 +510,7 @@ ScriptedImporter:
       y: 435
       width: 56
       height: 25
-    spriteID: df37315c20ea06c45a4c517f063fc594
+    spriteID: 32e6ad207e3e2174b8c9e34cde3b29c7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -530,7 +530,7 @@ ScriptedImporter:
       y: 468
       width: 45
       height: 25
-    spriteID: d9c03fc99f9b2db40aeb43c612a07512
+    spriteID: 8848d8983a2a3ea41ba5be00a4f2b04b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -550,7 +550,7 @@ ScriptedImporter:
       y: 177
       width: 34
       height: 25
-    spriteID: 0c5b5ce3654de7e48b52f27531670fe0
+    spriteID: f38aa84722be14f48bb169f708c5cc3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -570,7 +570,7 @@ ScriptedImporter:
       y: 470
       width: 32
       height: 25
-    spriteID: 1cd703eeb1b0a4148943f40a0acaa298
+    spriteID: 862f46abf7c78fc4da54b3c460432640
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -590,7 +590,7 @@ ScriptedImporter:
       y: 238
       width: 32
       height: 26
-    spriteID: a379b7a162b33ec4b97bf24931e832a6
+    spriteID: f71f6aee4a0d0e447a29af27929dbcc6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -610,7 +610,7 @@ ScriptedImporter:
       y: 70
       width: 32
       height: 32
-    spriteID: 2871888a26cd8ff41a056eb87b7a926b
+    spriteID: 6a3ad8106075ca747add71dfbbad9a42
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -630,7 +630,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 25
-    spriteID: 6a934ec56c942a84dab18a83d544dd8b
+    spriteID: 2191f77940a2d4544be6bd989fe42cdd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -650,7 +650,7 @@ ScriptedImporter:
       y: 355
       width: 32
       height: 23
-    spriteID: 3c3d920836bb01d4795db9f78006a398
+    spriteID: 5e1ccb56089e18743a63890db8cb9cf8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -670,7 +670,7 @@ ScriptedImporter:
       y: 386
       width: 32
       height: 23
-    spriteID: 199e0c2cdb49fa14da1467d5c57d97f6
+    spriteID: 65d91f98144b9f748a80d5966fed7caa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -690,7 +690,7 @@ ScriptedImporter:
       y: 230
       width: 32
       height: 24
-    spriteID: b777d741c84406949b5350e6bdd18cc1
+    spriteID: 2f0fd550dd5c03d4da82ea50375fbf8e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -710,7 +710,7 @@ ScriptedImporter:
       y: 37
       width: 32
       height: 25
-    spriteID: db331dfcd6dc6434faf9708006e1e98f
+    spriteID: 479ffa221c620d647ae30563cdb380de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -730,7 +730,7 @@ ScriptedImporter:
       y: 417
       width: 32
       height: 23
-    spriteID: 4af393b17b1e92c4a857fde79df77bdb
+    spriteID: 9006408eeb02c7e45b6712891188562a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -750,7 +750,7 @@ ScriptedImporter:
       y: 4
       width: 36
       height: 19
-    spriteID: 3736d408ee10e1643a0d7a350aa91192
+    spriteID: 795093519d8342446b75766b7b828a00
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -770,7 +770,7 @@ ScriptedImporter:
       y: 210
       width: 42
       height: 20
-    spriteID: 141cbc3d9f104cb42ae517bfcd2cedce
+    spriteID: 2bbb88940c1f2a94a81bcde799311b6c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -790,7 +790,7 @@ ScriptedImporter:
       y: 149
       width: 46
       height: 20
-    spriteID: 472eaf2d2e937cd40a34764d6eba7c6e
+    spriteID: 339c2e0a6540e4c499e086055ff97aae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -810,7 +810,7 @@ ScriptedImporter:
       y: 4
       width: 54
       height: 20
-    spriteID: 133522e9225cb9d40bd7a3c0c47fdef0
+    spriteID: 2c9596aa524150844a40cd6bc2fb5b3f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -830,7 +830,7 @@ ScriptedImporter:
       y: 448
       width: 32
       height: 20
-    spriteID: 42c57ee3f2acaed4483fc880eafc01b7
+    spriteID: fb1c27a2aacd04c4abd5e57b5d13e9f1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -850,7 +850,7 @@ ScriptedImporter:
       y: 476
       width: 32
       height: 20
-    spriteID: a1a9b3eeccf935349a60223df3326f94
+    spriteID: 1cdda4288f5e9f04fb61962e25fc5fab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -870,7 +870,7 @@ ScriptedImporter:
       y: 31
       width: 32
       height: 20
-    spriteID: 9f780b7ad6a3baf4e8f0121d93651825
+    spriteID: 77994a9d61da52f4e835f71d1c801a83
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -890,7 +890,7 @@ ScriptedImporter:
       y: 59
       width: 35
       height: 16
-    spriteID: 4503143a215e5834ea94e0b708f87f86
+    spriteID: dfb8345bc6b8f3b4f82783f493509bcc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -910,7 +910,7 @@ ScriptedImporter:
       y: 131
       width: 34
       height: 16
-    spriteID: da46f7974175e2740816efc6c8dc3f3c
+    spriteID: 5771305cee0891c4baa7cf68c8aca927
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -930,7 +930,7 @@ ScriptedImporter:
       y: 155
       width: 34
       height: 16
-    spriteID: 1965b1a129e3eb142a8fc3bc79ec8732
+    spriteID: 0ed4bc929076e714f953d7981253a8ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -950,7 +950,7 @@ ScriptedImporter:
       y: 83
       width: 35
       height: 16
-    spriteID: 86fac3a5ea43f8c4ea0e5c43b3fb5b31
+    spriteID: 1280f0700b6a95f429a6488f1255768f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -970,7 +970,7 @@ ScriptedImporter:
       y: 107
       width: 35
       height: 16
-    spriteID: ae6ad9eea10633349acaae9b9ece6653
+    spriteID: c8cb7b574a1e9d549bcbf7bb9d018359
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -990,7 +990,7 @@ ScriptedImporter:
       y: 59
       width: 11
       height: 12
-    spriteID: 48f5b6bbeb049204598a67fd58e987fd
+    spriteID: 6953c3b7c8bf9ab44a7bc90e0b339fa8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1010,7 +1010,7 @@ ScriptedImporter:
       y: 131
       width: 22
       height: 25
-    spriteID: b476f25af6c29794fb434605e2a8d95c
+    spriteID: 58a0dc073328fd94ba3673c77aa9d4e0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1030,7 +1030,7 @@ ScriptedImporter:
       y: 110
       width: 31
       height: 31
-    spriteID: cc3c22f660e0e5a46bd0130188f6f249
+    spriteID: 521b65d1d2c36dd4fabc663c4d04d31c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1050,7 +1050,7 @@ ScriptedImporter:
       y: 338
       width: 49
       height: 44
-    spriteID: 0fd23657b31d54d40887578edd1aae04
+    spriteID: 7a644d7daf9f33d42afe06907df85a7a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1070,7 +1070,7 @@ ScriptedImporter:
       y: 90
       width: 64
       height: 62
-    spriteID: 8ccc7e5bc76f3ad45b82a28aecc0bf90
+    spriteID: 95131443c5ecd984692ee6fc024cc590
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1090,7 +1090,7 @@ ScriptedImporter:
       y: 4
       width: 74
       height: 78
-    spriteID: 81e189b7eef1e404ca558ef5ac10e854
+    spriteID: 452848870c5b75546ab1fba7e60ee1cc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1115,7 +1115,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: e6f03b8e4724a3147a03bad2120f8e19
+      spriteId: 2a51fc9f198cc7140b6434fe23011fcf
     - name: microwave 1_Frame_1
       frameIndex: 1
       cellRect:
@@ -1123,7 +1123,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: e304798b91eb2804ebaf12f974094495
+      spriteId: 3868d4387112b6e47999551342d7af18
     - name: microwave 1_Frame_2
       frameIndex: 2
       cellRect:
@@ -1131,7 +1131,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 364b9a3f78c492340b09a3e84e7e53e6
+      spriteId: 9e8a1577f96e54c40bf45ec9ef85170a
     - name: microwave 1_Frame_3
       frameIndex: 3
       cellRect:
@@ -1139,7 +1139,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 24
-      spriteId: b26e6e4019a4de2478b50b4704299f99
+      spriteId: b9ac17d00967bff4c937229a9d41e0b6
     - name: microwave 1_Frame_4
       frameIndex: 4
       cellRect:
@@ -1147,7 +1147,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: 4a80f872abf585d4c89f07a7d69d908f
+      spriteId: 56fa7b246d471df448bf5349332ff7a1
     - name: microwave 1_Frame_5
       frameIndex: 5
       cellRect:
@@ -1155,7 +1155,7 @@ ScriptedImporter:
         y: 19
         width: 32
         height: 24
-      spriteId: 53318d246d0e6f9428c4b7a0bb83fe41
+      spriteId: e897f179ed21cb442ab08a29ba133496
     - name: microwave 1_Frame_6
       frameIndex: 6
       cellRect:
@@ -1163,7 +1163,7 @@ ScriptedImporter:
         y: 17
         width: 32
         height: 25
-      spriteId: c29e7867c31f14f4f9a3f7a5ab46285d
+      spriteId: 0ebcc268ae437de4d870dd74d9d3c234
     - name: microwave 1_Frame_7
       frameIndex: 7
       cellRect:
@@ -1171,7 +1171,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 24
-      spriteId: f9e9db87567376f49bd913b62626d52f
+      spriteId: a298f140bf91f2740994ef6f5a9adc32
     - name: microwave 1_Frame_8
       frameIndex: 8
       cellRect:
@@ -1179,7 +1179,7 @@ ScriptedImporter:
         y: 19
         width: 32
         height: 24
-      spriteId: 2ad0c7023dc92da498ae5989748b815e
+      spriteId: 00395e46a2ae5d640ab32c1c5a3ee092
     - name: microwave 1_Frame_9
       frameIndex: 9
       cellRect:
@@ -1187,7 +1187,7 @@ ScriptedImporter:
         y: 17
         width: 32
         height: 25
-      spriteId: e8f019631f60ec84399c6a66c743f060
+      spriteId: 9eff52866ae082942b641a589a37d8f7
     - name: microwave 1_Frame_10
       frameIndex: 10
       cellRect:
@@ -1195,7 +1195,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: d6d815cd9341bc042b14e378cd1275b0
+      spriteId: a802f21c6c5bc9b468207e921370becd
     - name: microwave 1_Frame_11
       frameIndex: 11
       cellRect:
@@ -1203,7 +1203,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 24
-      spriteId: c559542fc9c59f842b404655882fe14f
+      spriteId: 8865c1d6942e84b4d9e47e7dbfcce3c4
     - name: microwave 1_Frame_12
       frameIndex: 12
       cellRect:
@@ -1211,7 +1211,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 6c32cb130ceabdc4d93df2183a84eb34
+      spriteId: f07ea706aa84a5e42a4346277223134a
     - name: microwave 1_Frame_13
       frameIndex: 13
       cellRect:
@@ -1219,7 +1219,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 1a54caf8ee67cf34ea38f4721c6cb3ef
+      spriteId: 4d15d7e6e890eac4083bba452f0453b2
     - name: microwave 1_Frame_14
       frameIndex: 14
       cellRect:
@@ -1227,7 +1227,7 @@ ScriptedImporter:
         y: 16
         width: 35
         height: 30
-      spriteId: ce12e016e15ae5246aa3306a4f48661f
+      spriteId: 6a10b68ddc9620c4a960e0113e762881
     - name: microwave 1_Frame_15
       frameIndex: 15
       cellRect:
@@ -1235,7 +1235,7 @@ ScriptedImporter:
         y: 16
         width: 56
         height: 37
-      spriteId: 7f830c2c64926844cbb68027885d6024
+      spriteId: 8fec003b716988d43b86ddad0c0d0fb3
     - name: microwave 1_Frame_16
       frameIndex: 16
       cellRect:
@@ -1243,7 +1243,7 @@ ScriptedImporter:
         y: 16
         width: 56
         height: 46
-      spriteId: 6f592a3d58a3a984886accc1231c4cab
+      spriteId: d2c338213f3f8bb42a5a04e0ed6fd0bf
     - name: microwave 1_Frame_17
       frameIndex: 17
       cellRect:
@@ -1251,7 +1251,7 @@ ScriptedImporter:
         y: 16
         width: 56
         height: 52
-      spriteId: c595511a8b329654db46d24bff337ea7
+      spriteId: f0b0e716e1e311b4ea282d01b2dd1dd3
     - name: microwave 1_Frame_18
       frameIndex: 18
       cellRect:
@@ -1259,7 +1259,7 @@ ScriptedImporter:
         y: 16
         width: 56
         height: 56
-      spriteId: 75736a2caf02fdd46bccc714fbacdf41
+      spriteId: 83e9e89f17dacdb44a0f931136ac278e
     - name: microwave 1_Frame_19
       frameIndex: 19
       cellRect:
@@ -1267,7 +1267,7 @@ ScriptedImporter:
         y: 16
         width: 56
         height: 25
-      spriteId: df37315c20ea06c45a4c517f063fc594
+      spriteId: 32e6ad207e3e2174b8c9e34cde3b29c7
     - name: microwave 1_Frame_20
       frameIndex: 20
       cellRect:
@@ -1275,7 +1275,7 @@ ScriptedImporter:
         y: 16
         width: 45
         height: 25
-      spriteId: d9c03fc99f9b2db40aeb43c612a07512
+      spriteId: 8848d8983a2a3ea41ba5be00a4f2b04b
     - name: microwave 1_Frame_21
       frameIndex: 21
       cellRect:
@@ -1283,7 +1283,7 @@ ScriptedImporter:
         y: 16
         width: 34
         height: 25
-      spriteId: 0c5b5ce3654de7e48b52f27531670fe0
+      spriteId: f38aa84722be14f48bb169f708c5cc3a
     - name: microwave 1_Frame_22
       frameIndex: 22
       cellRect:
@@ -1291,7 +1291,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: 1cd703eeb1b0a4148943f40a0acaa298
+      spriteId: 862f46abf7c78fc4da54b3c460432640
     - name: microwave 1_Frame_23
       frameIndex: 23
       cellRect:
@@ -1299,7 +1299,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 26
-      spriteId: a379b7a162b33ec4b97bf24931e832a6
+      spriteId: f71f6aee4a0d0e447a29af27929dbcc6
     - name: microwave 1_Frame_24
       frameIndex: 24
       cellRect:
@@ -1307,7 +1307,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 32
-      spriteId: 2871888a26cd8ff41a056eb87b7a926b
+      spriteId: 6a3ad8106075ca747add71dfbbad9a42
     - name: microwave 1_Frame_25
       frameIndex: 25
       cellRect:
@@ -1315,7 +1315,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: 6a934ec56c942a84dab18a83d544dd8b
+      spriteId: 2191f77940a2d4544be6bd989fe42cdd
     - name: microwave 1_Frame_26
       frameIndex: 26
       cellRect:
@@ -1323,7 +1323,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 3c3d920836bb01d4795db9f78006a398
+      spriteId: 5e1ccb56089e18743a63890db8cb9cf8
     - name: microwave 1_Frame_27
       frameIndex: 27
       cellRect:
@@ -1331,7 +1331,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 199e0c2cdb49fa14da1467d5c57d97f6
+      spriteId: 65d91f98144b9f748a80d5966fed7caa
     - name: microwave 1_Frame_28
       frameIndex: 28
       cellRect:
@@ -1339,7 +1339,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 24
-      spriteId: b777d741c84406949b5350e6bdd18cc1
+      spriteId: 2f0fd550dd5c03d4da82ea50375fbf8e
     - name: microwave 1_Frame_29
       frameIndex: 29
       cellRect:
@@ -1347,7 +1347,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 25
-      spriteId: db331dfcd6dc6434faf9708006e1e98f
+      spriteId: 479ffa221c620d647ae30563cdb380de
     - name: microwave 1_Frame_30
       frameIndex: 30
       cellRect:
@@ -1355,7 +1355,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 23
-      spriteId: 4af393b17b1e92c4a857fde79df77bdb
+      spriteId: 9006408eeb02c7e45b6712891188562a
     - name: microwave 1_Frame_31
       frameIndex: 31
       cellRect:
@@ -1363,7 +1363,7 @@ ScriptedImporter:
         y: 16
         width: 36
         height: 19
-      spriteId: 3736d408ee10e1643a0d7a350aa91192
+      spriteId: 795093519d8342446b75766b7b828a00
     - name: microwave 1_Frame_32
       frameIndex: 32
       cellRect:
@@ -1371,7 +1371,7 @@ ScriptedImporter:
         y: 16
         width: 42
         height: 20
-      spriteId: 141cbc3d9f104cb42ae517bfcd2cedce
+      spriteId: 2bbb88940c1f2a94a81bcde799311b6c
     - name: microwave 1_Frame_33
       frameIndex: 33
       cellRect:
@@ -1379,7 +1379,7 @@ ScriptedImporter:
         y: 16
         width: 46
         height: 20
-      spriteId: 472eaf2d2e937cd40a34764d6eba7c6e
+      spriteId: 339c2e0a6540e4c499e086055ff97aae
     - name: microwave 1_Frame_34
       frameIndex: 34
       cellRect:
@@ -1387,7 +1387,7 @@ ScriptedImporter:
         y: 16
         width: 54
         height: 20
-      spriteId: 133522e9225cb9d40bd7a3c0c47fdef0
+      spriteId: 2c9596aa524150844a40cd6bc2fb5b3f
     - name: microwave 1_Frame_35
       frameIndex: 35
       cellRect:
@@ -1395,7 +1395,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 20
-      spriteId: 42c57ee3f2acaed4483fc880eafc01b7
+      spriteId: fb1c27a2aacd04c4abd5e57b5d13e9f1
     - name: microwave 1_Frame_36
       frameIndex: 36
       cellRect:
@@ -1403,7 +1403,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 20
-      spriteId: a1a9b3eeccf935349a60223df3326f94
+      spriteId: 1cdda4288f5e9f04fb61962e25fc5fab
     - name: microwave 1_Frame_37
       frameIndex: 37
       cellRect:
@@ -1411,7 +1411,7 @@ ScriptedImporter:
         y: 16
         width: 32
         height: 20
-      spriteId: 9f780b7ad6a3baf4e8f0121d93651825
+      spriteId: 77994a9d61da52f4e835f71d1c801a83
     - name: microwave 1_Frame_38
       frameIndex: 38
       cellRect:
@@ -1419,7 +1419,7 @@ ScriptedImporter:
         y: 30
         width: 35
         height: 16
-      spriteId: 4503143a215e5834ea94e0b708f87f86
+      spriteId: dfb8345bc6b8f3b4f82783f493509bcc
     - name: microwave 1_Frame_39
       frameIndex: 39
       cellRect:
@@ -1427,7 +1427,7 @@ ScriptedImporter:
         y: 30
         width: 34
         height: 16
-      spriteId: da46f7974175e2740816efc6c8dc3f3c
+      spriteId: 5771305cee0891c4baa7cf68c8aca927
     - name: microwave 1_Frame_40
       frameIndex: 40
       cellRect:
@@ -1435,7 +1435,7 @@ ScriptedImporter:
         y: 30
         width: 34
         height: 16
-      spriteId: 1965b1a129e3eb142a8fc3bc79ec8732
+      spriteId: 0ed4bc929076e714f953d7981253a8ae
     - name: microwave 1_Frame_41
       frameIndex: 41
       cellRect:
@@ -1443,7 +1443,7 @@ ScriptedImporter:
         y: 30
         width: 35
         height: 16
-      spriteId: 86fac3a5ea43f8c4ea0e5c43b3fb5b31
+      spriteId: 1280f0700b6a95f429a6488f1255768f
     - name: microwave 1_Frame_42
       frameIndex: 42
       cellRect:
@@ -1451,7 +1451,7 @@ ScriptedImporter:
         y: 30
         width: 35
         height: 16
-      spriteId: ae6ad9eea10633349acaae9b9ece6653
+      spriteId: c8cb7b574a1e9d549bcbf7bb9d018359
     - name: microwave 1_Frame_43
       frameIndex: 43
       cellRect:
@@ -1459,7 +1459,7 @@ ScriptedImporter:
         y: 33
         width: 11
         height: 12
-      spriteId: 48f5b6bbeb049204598a67fd58e987fd
+      spriteId: 6953c3b7c8bf9ab44a7bc90e0b339fa8
     - name: microwave 1_Frame_44
       frameIndex: 44
       cellRect:
@@ -1467,7 +1467,7 @@ ScriptedImporter:
         y: 27
         width: 22
         height: 25
-      spriteId: b476f25af6c29794fb434605e2a8d95c
+      spriteId: 58a0dc073328fd94ba3673c77aa9d4e0
     - name: microwave 1_Frame_45
       frameIndex: 45
       cellRect:
@@ -1475,7 +1475,7 @@ ScriptedImporter:
         y: 24
         width: 31
         height: 31
-      spriteId: cc3c22f660e0e5a46bd0130188f6f249
+      spriteId: 521b65d1d2c36dd4fabc663c4d04d31c
     - name: microwave 1_Frame_46
       frameIndex: 46
       cellRect:
@@ -1483,7 +1483,7 @@ ScriptedImporter:
         y: 15
         width: 49
         height: 44
-      spriteId: 0fd23657b31d54d40887578edd1aae04
+      spriteId: 7a644d7daf9f33d42afe06907df85a7a
     - name: microwave 1_Frame_47
       frameIndex: 47
       cellRect:
@@ -1491,7 +1491,7 @@ ScriptedImporter:
         y: 7
         width: 64
         height: 62
-      spriteId: 8ccc7e5bc76f3ad45b82a28aecc0bf90
+      spriteId: 95131443c5ecd984692ee6fc024cc590
     - name: microwave 1_Frame_48
       frameIndex: 48
       cellRect:
@@ -1499,10 +1499,34 @@ ScriptedImporter:
         y: 2
         width: 74
         height: 78
-      spriteId: 81e189b7eef1e404ca558ef5ac10e854
+      spriteId: 452848870c5b75546ab1fba7e60ee1cc
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 80, y: 80}
