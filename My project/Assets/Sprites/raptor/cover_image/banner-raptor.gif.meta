@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      banner-raptor_0: -5651146506389558496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

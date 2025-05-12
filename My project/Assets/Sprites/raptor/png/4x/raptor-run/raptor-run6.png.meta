@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raptor-run6_0: -2149125394862200871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

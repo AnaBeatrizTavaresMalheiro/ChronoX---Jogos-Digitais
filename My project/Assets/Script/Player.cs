@@ -161,6 +161,7 @@ public class Player : MonoBehaviour {
             return; // retorna
         }
         canAttack = false;
+        animator.SetTrigger("attack");
 
         Invoke("PerformAttackHit", attackHitDelay);
         Invoke("EndAttackAnim", attackAnimDuration);

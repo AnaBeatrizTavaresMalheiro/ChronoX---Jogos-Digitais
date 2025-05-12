@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raptor-pounced-attack5_0: -8279466987303300535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

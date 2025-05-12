@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      preview-raptor-jump_0: 6030150488736100335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

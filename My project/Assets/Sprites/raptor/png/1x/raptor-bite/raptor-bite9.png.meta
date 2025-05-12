@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raptor-bite9_0: 1993828107653621033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raptor-pounce_0: -3958631259017953592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

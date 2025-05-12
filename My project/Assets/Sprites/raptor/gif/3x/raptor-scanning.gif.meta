@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raptor-scanning_0: 5989242477839294792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

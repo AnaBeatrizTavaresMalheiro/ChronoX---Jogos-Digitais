@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      preview-raptor-downward-attack_0: 5480712093017984684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

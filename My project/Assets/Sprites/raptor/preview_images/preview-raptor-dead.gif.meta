@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      preview-raptor-dead_0: 2461180078885330974
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
