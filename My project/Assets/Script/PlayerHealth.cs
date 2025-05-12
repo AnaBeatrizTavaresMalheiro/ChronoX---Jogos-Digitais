@@ -41,11 +41,11 @@ public class PlayerHealth : MonoBehaviour
             iconesVidas[vidas].enabled = false; // desativa um icone de vida
 
         }
-        if(vidas >= 1) {
+        if(vidas >= 1) { // levar dano quendo ainda tier 3 ou 2 coracoes
             animator.SetTrigger("hurt");
             Invoke(nameof(EndHurtAnim), hurtDuration);
         }
-        if (vidas <= 0) {
+        if (vidas <= 0) { // quando so tiver 1 coracao, apenas a animacao de morrer
             isDead = true; // morreu
             animator.SetBool("death", true);
             Invoke("Die", dieDuration);
