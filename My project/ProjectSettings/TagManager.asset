@@ -18,6 +18,7 @@ TagManager:
   - HeartBoss_1
   - BossHead
   - PlayerFeet
+  - BossGround
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Plataform
   - Player
   - Knight
-  - 
+  - DinoBoss
   - 
   - 
   - 
