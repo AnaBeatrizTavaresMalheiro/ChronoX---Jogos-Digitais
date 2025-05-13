@@ -6,9 +6,17 @@ using UnityEngine;
 public class KnightHealth : MonoBehaviour {
 
     private Animator animator; // pode fazer as animações
+
+    [Header("Vida")]
     public int vidas = 2; // quantidade de vidas do knight
-    public float dieDuration; // duração da animação de morrer para o inimigo sumir depois
     private bool isDead = false; // saber se está morto ou não
+
+    [Header("Invulnerabilidade")]
+    public float invulnDuration = 0.5f; // tempo em que fica invulnerável após sofrer dano
+    private bool isInvulnerable = false; // saber se está numa janela de invulnerabilidade
+
+    [Header("Morte")]
+    public float dieDuration; // duração da animação de morrer para o inimigo sumir depois
 
     private void Awake() { 
         animator = GetComponent<Animator>();
@@ -23,9 +31,13 @@ public class KnightHealth : MonoBehaviour {
     }
 
     public void TakeDamage() {
-        if(isDead) { // se já morreu ignora
+        if(isDead || isInvulnerable) { // se já morreu ignora
             return;
         }
+
+        // entra em invulnerabilidade
+        isInvulnerable = true;
+        Invoke("EndInvulnerability", invulnDuration);
 
         vidas--; // menos uma vida
 
@@ -35,14 +47,20 @@ public class KnightHealth : MonoBehaviour {
         else { // quando for receber o segundo ataque
             isDead = true; // morreu
             animator.SetBool("death", true); // animacao de morrer
-            var ia = GetComponent<Knight>();
+
+            var ia = GetComponent<Knight>(); // desabilita todo o Kniht, nenhuma função dele funciona mais -> Update, Attack etc
             if(ia != null) {
                 ia.enabled = false;
+                ia.CancelInvoke(); // cancela todos os Invokes pendentes no Knight
             }
 
             Invoke("Die", dieDuration); // sumir do mapa depois de um X tempo
         }
 
+    }
+
+    private void EndInvulnerability() {
+        isInvulnerable = false; // pode voltar a tomar dano
     }
 
     private void Die() {

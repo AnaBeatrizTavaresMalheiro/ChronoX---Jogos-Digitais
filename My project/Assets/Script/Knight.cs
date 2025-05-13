@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Knight : MonoBehaviour {
-        private Transform target; // variável para saber quem o inimigo vai perseguir
+    private Transform target; // variável para saber quem o inimigo vai perseguir
     private Animator animator; // pode fazer as animações
 
     [Header("Movimento")] // cabeçalho no Inspector para variáveis de movimento
@@ -19,6 +19,7 @@ public class Knight : MonoBehaviour {
     public float attackHitDelay; // delay antes do hit do ataque
     public float attackAnimDuration; // tempo de duração da animação de ataque
     public float attackCooldown; // cooldown entre ataques
+    public float contactAttackDelay; // delay para ele atacar o player quando tocar nele
 
     private bool canAttack = true; // controlar se pode atacar novamente
 
@@ -35,11 +36,17 @@ public class Knight : MonoBehaviour {
 
             Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // colisão com o Player
             if (hits.Length > 0) { // se colidir, ataca
-                Attack();
-            } else {
+                if(canAttack) {
+                    canAttack = false; // bloqueia até o próximo ResetCanAttack
+                    animator.SetBool("walk", false); // para a animação de andar 
+                    Invoke("Attack", contactAttackDelay); // delay na hora de atacar quando toca no player
+                }
+            } 
+            else {
                 FollowPlayer(); // se não colidir, segue o player
             }
-        } else { // sem alvo
+        } 
+        else { // sem alvo
             StopMoving(); // para de se mover
         }
     }
@@ -59,7 +66,8 @@ public class Knight : MonoBehaviour {
         Vector3 scale = transform.localScale;
         if (target.position.x > transform.position.x) {
             scale.x = Mathf.Abs(scale.x); // fica normal
-        } else {
+        } 
+        else {
             scale.x = -Mathf.Abs(scale.x); // inverte no eixo X
         }
         transform.localScale = scale;
@@ -80,10 +88,6 @@ public class Knight : MonoBehaviour {
     }
 
     private void Attack() {
-        if (!canAttack) return; // se não pode atacar, sai
-        canAttack = false;
-
-        animator.SetBool("walk", false);
         animator.SetTrigger("attack"); // dispara animação de ataque
 
         Invoke("PerformAttackHit", attackHitDelay); // delay antes do hit
@@ -99,7 +103,7 @@ public class Knight : MonoBehaviour {
     }
 
     private void EndAttackAnim() { // ao terminar a animação
-        animator.CrossFade("minotauro_idle", 0f); // volta para idle
+        animator.CrossFade("knight_idle", 0f); // volta para idle
     }
 
     private void ResetCanAttack() { // liberar novo ataque

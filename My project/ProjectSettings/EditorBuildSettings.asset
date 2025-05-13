@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: 69b815bfdb13de348a326863861dc965
+  - enabled: 1
+    path: Assets/Scenes/Futuro_teste.unity
+    guid: 82c61103c4d8e864d94a4c77b7757035
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

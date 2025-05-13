@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3904405849159832225}
   - component: {fileID: 2349096670828161331}
   - component: {fileID: 1230675000990362851}
-  m_Layer: 10
-  m_Name: peca_0 1
+  m_Layer: 0
+  m_Name: "pe\xE7a"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

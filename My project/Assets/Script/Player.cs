@@ -117,9 +117,7 @@ public class Player : MonoBehaviour {
             PlayerHealth.Instance.TakeDamage();
         }
         if(collision.gameObject.tag == "Hole") {
-            PlayerHealth.Instance.TakeDamage();
-            PlayerHealth.Instance.TakeDamage();
-            PlayerHealth.Instance.TakeDamage();
+            PlayerHealth.Instance.InstaKill();
         }
 
     }

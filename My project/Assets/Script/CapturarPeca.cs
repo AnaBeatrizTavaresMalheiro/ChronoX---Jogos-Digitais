@@ -3,27 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CapturarPeca : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+public class CapturarPeca : MonoBehaviour {
+    public string phase_name; // nome da fase atribuido la no inspector
+
+    void Start() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-         Debug.Log("Colidiu com: " );
+    void Update() {
+
     }
 
-   void OnCollisionEnter2D(Collision2D collision)
-{
-    Debug.Log("Colidiu com: " + collision.gameObject.name);
+   void OnCollisionEnter2D(Collision2D collision) {
 
-    if (collision.gameObject.CompareTag("Player"))
-    {
-        SceneManager.LoadScene("Idade Média");
+    if (collision.gameObject.CompareTag("Player")) {
+        SceneManager.LoadScene(phase_name);
     }
 }
 }

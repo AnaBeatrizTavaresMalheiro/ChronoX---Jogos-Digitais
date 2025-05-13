@@ -68,4 +68,22 @@ public class PlayerHealth : MonoBehaviour
         isInvulnerable = false; // pode levar dano de volta
     }
 
+    public void InstaKill() {
+        if(isDead) { // se ja tiver morto retorna
+            return;
+        }
+        
+        isDead = true;
+        isInvulnerable = true;
+
+        foreach(var icon in iconesVidas) { // tira todas as vidas da cena
+            if(icon) {
+                icon.enabled = false;  
+            } 
+        }
+
+        animator.SetBool("death", true); // animacao de morte
+        Invoke(nameof(Die), dieDuration);
+    }
+
 }

@@ -145,6 +145,7 @@ MonoBehaviour:
   attackHitDelay: 0.3
   attackAnimDuration: 0.4
   attackCooldown: 1
+  contactAttackDelay: 0.5
 --- !u!114 &5241279292616545702
 MonoBehaviour:
   m_ObjectHideFlags: 0

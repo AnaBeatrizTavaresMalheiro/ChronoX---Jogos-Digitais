@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MinotaurHealth : MonoBehaviour {
@@ -15,6 +16,9 @@ public class MinotaurHealth : MonoBehaviour {
     
     [Header("Morte")]
     public float dieDuration; // duração da animação de morte antes de destruir
+
+    [Header("Objeto ao morrer")]
+    public GameObject timeMachine; // peça da máquina do tempo
 
 
     private void Awake() { // executa ao instanciar o objeto
@@ -47,9 +51,10 @@ public class MinotaurHealth : MonoBehaviour {
         else { // quando for receber o segundo ataque
             isDead = true; // morreu
             animator.SetBool("death", true); // animacao de morrer
-            var ia = GetComponent<Knight>();
+            var ia = GetComponent<Minotauro>();
             if(ia != null) {
                 ia.enabled = false;
+                ia.CancelInvoke(); // cancela todos os Invokes pendentes no Minotauro
             }
 
             Invoke("Die", dieDuration); // sumir do mapa depois de um X tempo
@@ -62,6 +67,9 @@ public class MinotaurHealth : MonoBehaviour {
     }
 
     private void Die() { // executa a destruição do objeto
+        if(timeMachine != null) {
+            timeMachine.SetActive(true); // faço ela aparecer
+        }
     
         Destroy(gameObject); // remove o minotauro da cena
     }
