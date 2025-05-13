@@ -23,6 +23,7 @@ public class DinoHeadCollider : MonoBehaviour {
             DinossauroHealth boss_preHistoria = collider.GetComponentInParent<DinossauroHealth>();
             boss_preHistoria.TakeDamage();
             GetComponentInParent<Rigidbody2D>().AddForce(Vector2.up * 15f, ForceMode2D.Impulse);
+            GetComponentInParent<Rigidbody2D>().AddForce(Vector2.right * 5f, ForceMode2D.Impulse);
         }
     }
 

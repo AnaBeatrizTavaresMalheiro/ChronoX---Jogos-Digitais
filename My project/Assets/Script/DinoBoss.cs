@@ -1,5 +1,5 @@
+// DinoBoss.cs
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DinoBoss : MonoBehaviour {
@@ -12,7 +12,10 @@ public class DinoBoss : MonoBehaviour {
 
     [Header("Ataque")]
     public float attackCooldown = 1f;     // intervalo mínimo entre ataques
-    private bool  canAttack = true;       // controla se pode atacar de novo
+    private bool canAttack = true;        // controla se pode atacar de novo
+
+    // Coroutine atual de stun (para prevenir ataques)
+    private Coroutine attackStunCoroutine;
 
     void Start() {
         animator = GetComponent<Animator>();
@@ -47,8 +50,9 @@ public class DinoBoss : MonoBehaviour {
     private void FaceTarget() {
         // vira para encarar o Player
         Vector3 s = transform.localScale;
-        if (target.position.x > transform.position.x) s.x = Mathf.Abs(s.x);
-        else                                         s.x = -Mathf.Abs(s.x);
+        s.x = target.position.x > transform.position.x
+            ? Mathf.Abs(s.x)
+            : -Mathf.Abs(s.x);
         transform.localScale = s;
     }
 
@@ -79,6 +83,21 @@ public class DinoBoss : MonoBehaviour {
     }
 
     private void ResetCanAttack() {
+        canAttack = true;
+    }
+
+    /// <summary>
+    /// Desativa o ataque por 'duration' segundos (stun).
+    /// </summary>
+    public void StunAttack(float duration) {
+        if (attackStunCoroutine != null)
+            StopCoroutine(attackStunCoroutine);
+        attackStunCoroutine = StartCoroutine(StunAttackCoroutine(duration));
+    }
+
+    private IEnumerator StunAttackCoroutine(float duration) {
+        canAttack = false;
+        yield return new WaitForSeconds(duration);
         canAttack = true;
     }
 

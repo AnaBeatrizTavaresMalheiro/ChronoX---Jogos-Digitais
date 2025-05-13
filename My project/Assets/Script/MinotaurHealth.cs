@@ -60,7 +60,7 @@ public class MinotaurHealth : MonoBehaviour {
             var sr = go.AddComponent<SpriteRenderer>();
             sr.sprite = heartSprite;
             sr.sortingLayerName = "Default";
-            sr.sortingOrder     = 10;
+            sr.sortingOrder = 10;
             hearts.Add(sr);
         }
     }
