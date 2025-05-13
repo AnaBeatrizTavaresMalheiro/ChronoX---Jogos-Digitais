@@ -1,0 +1,1554 @@
+fileFormatVersion: 2
+guid: dd76c082d074fd94c8494571bdd5e212
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8328118901234821642
+    second: laser_attack_up_0
+  - first:
+      213: -3004210577591448308
+    second: laser_attack_up_1
+  - first:
+      213: -7519022291931908543
+    second: laser_attack_up_2
+  - first:
+      213: 8682483392442723430
+    second: laser_attack_up_3
+  - first:
+      213: -1236930624265256501
+    second: laser_attack_up_4
+  - first:
+      213: -5927717718563617149
+    second: laser_attack_up_5
+  - first:
+      213: 5384264976228249439
+    second: laser_attack_up_6
+  - first:
+      213: -6162824707259261004
+    second: laser_attack_up_7
+  - first:
+      213: 3081087560710549296
+    second: laser_attack_up_8
+  - first:
+      213: -5319882095092333151
+    second: laser_attack_up_9
+  - first:
+      213: -4006610114376944199
+    second: laser_attack_up_10
+  - first:
+      213: 1234369035779096198
+    second: laser_attack_up_11
+  - first:
+      213: -5546273740009919443
+    second: laser_attack_up_12
+  - first:
+      213: -7299806459167959400
+    second: laser_attack_up_13
+  - first:
+      213: -5557216641955574619
+    second: laser_attack_up_14
+  - first:
+      213: -8707140747562309138
+    second: laser_attack_up_15
+  - first:
+      213: 5306004609327071442
+    second: laser_attack_up_16
+  - first:
+      213: 1488049382153244166
+    second: laser_attack_up_17
+  - first:
+      213: 1447368732813506875
+    second: laser_attack_up_18
+  - first:
+      213: 239644952839227118
+    second: laser_attack_up_19
+  - first:
+      213: -1343314293616945705
+    second: laser_attack_up_20
+  - first:
+      213: 20520085840912744
+    second: laser_attack_up_21
+  - first:
+      213: 330502216630816117
+    second: laser_attack_up_22
+  - first:
+      213: -9022992034415720531
+    second: laser_attack_up_23
+  - first:
+      213: 2556797583990944370
+    second: laser_attack_up_24
+  - first:
+      213: -2264368289701169437
+    second: laser_attack_up_25
+  - first:
+      213: -2071085648824365075
+    second: laser_attack_up_26
+  - first:
+      213: 5948282028538271335
+    second: laser_attack_up_27
+  - first:
+      213: 8385315869052710035
+    second: laser_attack_up_28
+  - first:
+      213: -8113903324207698911
+    second: laser_attack_up_29
+  - first:
+      213: 6530603218765219612
+    second: laser_attack_up_30
+  - first:
+      213: 8855643050594112235
+    second: laser_attack_up_31
+  - first:
+      213: -7336852734802055618
+    second: laser_attack_up_32
+  - first:
+      213: -1619451332373057130
+    second: laser_attack_up_33
+  - first:
+      213: 2386183661980210125
+    second: laser_attack_up_34
+  - first:
+      213: -378974630990249273
+    second: laser_attack_up_35
+  - first:
+      213: 1741922492132451711
+    second: laser_attack_up_36
+  - first:
+      213: -5427849155006606973
+    second: laser_attack_up_37
+  - first:
+      213: -6102028828078464011
+    second: laser_attack_up_38
+  - first:
+      213: 4053960119193115108
+    second: laser_attack_up_39
+  - first:
+      213: 7364701978703770405
+    second: laser_attack_up_40
+  - first:
+      213: -3503350826072860566
+    second: laser_attack_up_41
+  - first:
+      213: 2633071660705576408
+    second: laser_attack_up_42
+  - first:
+      213: 5758417828131253457
+    second: laser_attack_up_43
+  - first:
+      213: -776047038555264451
+    second: laser_attack_up_44
+  - first:
+      213: -6316825734756927456
+    second: laser_attack_up_45
+  - first:
+      213: 2248943655030918188
+    second: laser_attack_up_46
+  - first:
+      213: 90237437785244227
+    second: laser_attack_up_47
+  - first:
+      213: -586130171856209464
+    second: laser_attack_up_48
+  - first:
+      213: 317854682275193661
+    second: laser_attack_up_49
+  - first:
+      213: -1504746048388880288
+    second: laser_attack_up_50
+  - first:
+      213: 2469197053079017587
+    second: laser_attack_up_51
+  - first:
+      213: -5272053354867623420
+    second: laser_attack_up_52
+  - first:
+      213: -6129176956150563065
+    second: laser_attack_up_53
+  - first:
+      213: -4435141595365089311
+    second: laser_attack_up_54
+  - first:
+      213: -6171097649027586460
+    second: laser_attack_up_55
+  - first:
+      213: -5894332333352492074
+    second: laser_attack_up_56
+  - first:
+      213: 8265198684649268490
+    second: laser_attack_up_57
+  - first:
+      213: -3409335951178391644
+    second: laser_attack_up_58
+  - first:
+      213: -8468606093758470931
+    second: laser_attack_up_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: laser_attack_up_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1044
+        width: 202
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a6153340c639370800000000000000
+      internalID: 8328118901234821642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dc03c8566ee46d0800000000000000
+      internalID: -3004210577591448308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_2
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146b72f101117a790800000000000000
+      internalID: -7519022291931908543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ce6c6c4a06e7870800000000000000
+      internalID: 8682483392442723430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_4
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc10ed8962a85dee0800000000000000
+      internalID: -1236930624265256501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3860a3034248cbda0800000000000000
+      internalID: -5927717718563617149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_6
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f69a40870c8ba40800000000000000
+      internalID: 5384264976228249439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf9fcea49f397aa0800000000000000
+      internalID: -6162824707259261004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_8
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fe60aefc832ca20800000000000000
+      internalID: 3081087560710549296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_9
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a58f03ab6bfb26b0800000000000000
+      internalID: -5319882095092333151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_10
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b533133459a568c0800000000000000
+      internalID: -4006610114376944199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_11
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68eba5b191c512110800000000000000
+      internalID: 1234369035779096198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ca1ab3b6da703b0800000000000000
+      internalID: -5546273740009919443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_13
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896113093b0e1ba90800000000000000
+      internalID: -7299806459167959400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_14
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac495458ecc0e2b0800000000000000
+      internalID: -5557216641955574619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_15
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9283c5f950a2780800000000000000
+      internalID: -8707140747562309138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_16
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0868b6417b2a940800000000000000
+      internalID: 5306004609327071442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_17
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ecb7f670d96a410800000000000000
+      internalID: 1488049382153244166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_18
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1044
+        width: 202
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b393b5aa136161410800000000000000
+      internalID: 1447368732813506875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_19
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 835
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6823e90d3635300800000000000000
+      internalID: 239644952839227118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 626
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5d14364c69b5de0800000000000000
+      internalID: -1343314293616945705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 626
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861ee4bc8e6e84000800000000000000
+      internalID: 20520085840912744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_22
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 626
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d42c3d30e269400800000000000000
+      internalID: 330502216630816117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 626
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7c871fc84e7c280800000000000000
+      internalID: -9022992034415720531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_24
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 626
+        width: 202
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2727b5c2bd19b7320800000000000000
+      internalID: 2556797583990944370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_25
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 626
+        width: 202
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6f3b3a9095390e0800000000000000
+      internalID: -2264368289701169437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_26
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 626
+        width: 203
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def0a6253960243e0800000000000000
+      internalID: -2071085648824365075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_27
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 626
+        width: 203
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7661dd65dfa8c8250800000000000000
+      internalID: 5948282028538271335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_28
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 626
+        width: 203
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39c25580b50ae5470800000000000000
+      internalID: 8385315869052710035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_29
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 626
+        width: 203
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c2dba7aef956f80800000000000000
+      internalID: -8113903324207698911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 417
+        width: 203
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17068fd60d51aa50800000000000000
+      internalID: 6530603218765219612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_31
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 417
+        width: 203
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be291507f6095ea70800000000000000
+      internalID: 8855643050594112235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_32
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 417
+        width: 203
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e25cc5f434e2a90800000000000000
+      internalID: -7336852734802055618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_33
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 417
+        width: 203
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691fedae79d8689e0800000000000000
+      internalID: -1619451332373057130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_34
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 417
+        width: 203
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3db25e56d6d1120800000000000000
+      internalID: 2386183661980210125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_35
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 417
+        width: 203
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c201fcb49c9dbaf0800000000000000
+      internalID: -378974630990249273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_36
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 208
+        width: 202
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7561d9074d8c2810800000000000000
+      internalID: 1741922492132451711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_37
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 417
+        width: 203
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3815d6593f76ca4b0800000000000000
+      internalID: -5427849155006606973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_38
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 417
+        width: 203
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3a03d5c1d315ba0800000000000000
+      internalID: -6102028828078464011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_39
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 417
+        width: 203
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e91b16ef3f824830800000000000000
+      internalID: 4053960119193115108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_40
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 417
+        width: 203
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52331450e6da43660800000000000000
+      internalID: 7364701978703770405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_41
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 208
+        width: 203
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a681b583cf8916fc0800000000000000
+      internalID: -3503350826072860566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_42
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 208
+        width: 203
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5f08c89bc8a8420800000000000000
+      internalID: 2633071660705576408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 208
+        width: 203
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc2a0a51820aef40800000000000000
+      internalID: 5758417828131253457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_44
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 208
+        width: 202
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a6be1845dea35f0800000000000000
+      internalID: -776047038555264451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_45
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 208
+        width: 202
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02874c356702658a0800000000000000
+      internalID: -6316825734756927456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_46
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 208
+        width: 202
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c8cfdb65ad53f10800000000000000
+      internalID: 2248943655030918188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_47
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 208
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34281a8b876904100800000000000000
+      internalID: 90237437785244227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_48
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 208
+        width: 202
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c93f52d6b5add7f0800000000000000
+      internalID: -586130171856209464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_49
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 208
+        width: 202
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d332533462f396400800000000000000
+      internalID: 317854682275193661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_50
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068ab9401711e1be0800000000000000
+      internalID: -1504746048388880288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_51
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378573d23a9544220800000000000000
+      internalID: 2469197053079017587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_52
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a75320867e5d6b0800000000000000
+      internalID: -5272053354867623420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_53
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fb22b380ac0faa0800000000000000
+      internalID: -6129176956150563065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_54
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef54b7a7363372c0800000000000000
+      internalID: -4435141595365089311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_55
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4666673526bdb5aa0800000000000000
+      internalID: -6171097649027586460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_56
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3ec6ae8ff133ea0800000000000000
+      internalID: -5894332333352492074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_57
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05ab8ca962e3b270800000000000000
+      internalID: 8265198684649268490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_58
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af1b0e040b9fa0d0800000000000000
+      internalID: -3409335951178391644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_attack_up_59
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 0
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de461d650a7797a80800000000000000
+      internalID: -8468606093758470931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

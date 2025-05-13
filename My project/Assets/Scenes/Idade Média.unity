@@ -45756,11 +45756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.73
+      value: 133.79
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.53
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 928876764337557038, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -74766,6 +74766,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 414630023013217918, guid: c56065e8e0bb7894ab8a65e4d67aa943, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1498564507}
+    - targetCorrespondingSourceObject: {fileID: 414630023013217918, guid: c56065e8e0bb7894ab8a65e4d67aa943, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498564509}
   m_SourcePrefab: {fileID: 100100000, guid: c56065e8e0bb7894ab8a65e4d67aa943, type: 3}
 --- !u!1 &1498564506 stripped
 GameObject:
@@ -74845,6 +74848,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1498564509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498564506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f6bd92b2875f64bb90bf17a8d37fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  visionRadius: 0
+  attackOffset: 0
+  attackRadius: 0
+  Player:
+    serializedVersion: 2
+    m_Bits: 0
+  attackHitDelay: 0
+  attackAnimDuration: 0
+  attackCooldown: 0
 --- !u!1 &1506709882
 GameObject:
   m_ObjectHideFlags: 0
@@ -76915,5 +76940,5 @@ SceneRoots:
   - {fileID: 5216844982000092718}
   - {fileID: 26174766}
   - {fileID: 325485636}
-  - {fileID: 1498564505}
   - {fileID: 777192718}
+  - {fileID: 1498564505}
