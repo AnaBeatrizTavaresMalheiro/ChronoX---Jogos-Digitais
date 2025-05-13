@@ -1,0 +1,1562 @@
+fileFormatVersion: 2
+guid: 7b870befe4bd5c84790b2f99ed8c55ca
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Attack
+    second: {fileID: 7400000, guid: 8d794765e59407f4d9dfb87126622e39, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death
+    second: {fileID: 7400000, guid: 3393dcd6f5f782a4197c02dbaef43474, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Hit
+    second: {fileID: 7400000, guid: 527ac322067304f4f99c643f4c4195ef, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: c97f2daf41867d9498cb5af6b0d8297e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Run
+    second: {fileID: 7400000, guid: 4d7df7d2e04ed014da0538368fb8f177, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: fireball
+    second: {fileID: 7400000, guid: ffad4c639bcc23447be5f7dc7c50e856, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638827501131305798
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: microwave 1_Frame_0
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 272
+      width: 32
+      height: 25
+    spriteID: 2a51fc9f198cc7140b6434fe23011fcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 272}
+  - name: microwave 1_Frame_1
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 305
+      width: 32
+      height: 25
+    spriteID: 3868d4387112b6e47999551342d7af18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 305}
+  - name: microwave 1_Frame_2
+    originalName: 
+    pivot: {x: 0.40625, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 262
+      width: 32
+      height: 23
+    spriteID: 9e8a1577f96e54c40bf45ec9ef85170a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 262}
+  - name: microwave 1_Frame_3
+    originalName: 
+    pivot: {x: 0.40625, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 70
+      width: 32
+      height: 24
+    spriteID: b9ac17d00967bff4c937229a9d41e0b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 70}
+  - name: microwave 1_Frame_4
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 338
+      width: 32
+      height: 25
+    spriteID: 56fa7b246d471df448bf5349332ff7a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 338}
+  - name: microwave 1_Frame_5
+    originalName: 
+    pivot: {x: 0.40625, y: -0.7916666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 102
+      width: 32
+      height: 24
+    spriteID: e897f179ed21cb442ab08a29ba133496
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 102}
+  - name: microwave 1_Frame_6
+    originalName: 
+    pivot: {x: 0.40625, y: -0.68}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 371
+      width: 32
+      height: 25
+    spriteID: 0ebcc268ae437de4d870dd74d9d3c234
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 371}
+  - name: microwave 1_Frame_7
+    originalName: 
+    pivot: {x: 0.40625, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 134
+      width: 32
+      height: 24
+    spriteID: a298f140bf91f2740994ef6f5a9adc32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 134}
+  - name: microwave 1_Frame_8
+    originalName: 
+    pivot: {x: 0.40625, y: -0.7916666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 166
+      width: 32
+      height: 24
+    spriteID: 00395e46a2ae5d640ab32c1c5a3ee092
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 166}
+  - name: microwave 1_Frame_9
+    originalName: 
+    pivot: {x: 0.40625, y: -0.68}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 404
+      width: 32
+      height: 25
+    spriteID: 9eff52866ae082942b641a589a37d8f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 404}
+  - name: microwave 1_Frame_10
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 437
+      width: 32
+      height: 25
+    spriteID: a802f21c6c5bc9b468207e921370becd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 437}
+  - name: microwave 1_Frame_11
+    originalName: 
+    pivot: {x: 0.375, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 198
+      width: 32
+      height: 24
+    spriteID: 8865c1d6942e84b4d9e47e7dbfcce3c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 198}
+  - name: microwave 1_Frame_12
+    originalName: 
+    pivot: {x: 0.34374997, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 293
+      width: 32
+      height: 23
+    spriteID: f07ea706aa84a5e42a4346277223134a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 293}
+  - name: microwave 1_Frame_13
+    originalName: 
+    pivot: {x: 0.34374997, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 324
+      width: 32
+      height: 23
+    spriteID: 4d15d7e6e890eac4083bba452f0453b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 324}
+  - name: microwave 1_Frame_14
+    originalName: 
+    pivot: {x: 0.51428574, y: -0.53333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 32
+      width: 35
+      height: 30
+    spriteID: 6a10b68ddc9620c4a960e0113e762881
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 32}
+  - name: microwave 1_Frame_15
+    originalName: 
+    pivot: {x: 0.6964286, y: -0.4324324}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 390
+      width: 56
+      height: 37
+    spriteID: 8fec003b716988d43b86ddad0c0d0fb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 390}
+  - name: microwave 1_Frame_16
+    originalName: 
+    pivot: {x: 0.6964286, y: -0.3478261}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 284
+      width: 56
+      height: 46
+    spriteID: d2c338213f3f8bb42a5a04e0ed6fd0bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 284}
+  - name: microwave 1_Frame_17
+    originalName: 
+    pivot: {x: 0.6964286, y: -0.30769232}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 224
+      width: 56
+      height: 52
+    spriteID: f0b0e716e1e311b4ea282d01b2dd1dd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 224}
+  - name: microwave 1_Frame_18
+    originalName: 
+    pivot: {x: 0.6964286, y: -0.2857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 160
+      width: 56
+      height: 56
+    spriteID: 83e9e89f17dacdb44a0f931136ac278e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 160}
+  - name: microwave 1_Frame_19
+    originalName: 
+    pivot: {x: 0.6964286, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 435
+      width: 56
+      height: 25
+    spriteID: 32e6ad207e3e2174b8c9e34cde3b29c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 435}
+  - name: microwave 1_Frame_20
+    originalName: 
+    pivot: {x: 0.62222224, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 468
+      width: 45
+      height: 25
+    spriteID: 8848d8983a2a3ea41ba5be00a4f2b04b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 468}
+  - name: microwave 1_Frame_21
+    originalName: 
+    pivot: {x: 0.44117647, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 177
+      width: 34
+      height: 25
+    spriteID: f38aa84722be14f48bb169f708c5cc3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 177}
+  - name: microwave 1_Frame_22
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 470
+      width: 32
+      height: 25
+    spriteID: 862f46abf7c78fc4da54b3c460432640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 470}
+  - name: microwave 1_Frame_23
+    originalName: 
+    pivot: {x: 0.375, y: -0.61538464}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 238
+      width: 32
+      height: 26
+    spriteID: f71f6aee4a0d0e447a29af27929dbcc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 238}
+  - name: microwave 1_Frame_24
+    originalName: 
+    pivot: {x: 0.40625, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 70
+      width: 32
+      height: 32
+    spriteID: 6a3ad8106075ca747add71dfbbad9a42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 70}
+  - name: microwave 1_Frame_25
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 32
+      height: 25
+    spriteID: 2191f77940a2d4544be6bd989fe42cdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: microwave 1_Frame_26
+    originalName: 
+    pivot: {x: 0.3125, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 355
+      width: 32
+      height: 23
+    spriteID: 5e1ccb56089e18743a63890db8cb9cf8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 355}
+  - name: microwave 1_Frame_27
+    originalName: 
+    pivot: {x: 0.3125, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 386
+      width: 32
+      height: 23
+    spriteID: 65d91f98144b9f748a80d5966fed7caa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 386}
+  - name: microwave 1_Frame_28
+    originalName: 
+    pivot: {x: 0.375, y: -0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 230
+      width: 32
+      height: 24
+    spriteID: 2f0fd550dd5c03d4da82ea50375fbf8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 230}
+  - name: microwave 1_Frame_29
+    originalName: 
+    pivot: {x: 0.40625, y: -0.64000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 37
+      width: 32
+      height: 25
+    spriteID: 479ffa221c620d647ae30563cdb380de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 37}
+  - name: microwave 1_Frame_30
+    originalName: 
+    pivot: {x: 0.3125, y: -0.6956522}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 417
+      width: 32
+      height: 23
+    spriteID: 9006408eeb02c7e45b6712891188562a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 417}
+  - name: microwave 1_Frame_31
+    originalName: 
+    pivot: {x: 0.22222222, y: -0.8421053}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 36
+      height: 19
+    spriteID: 795093519d8342446b75766b7b828a00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 4}
+  - name: microwave 1_Frame_32
+    originalName: 
+    pivot: {x: 0.2857143, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 210
+      width: 42
+      height: 20
+    spriteID: 2bbb88940c1f2a94a81bcde799311b6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 210}
+  - name: microwave 1_Frame_33
+    originalName: 
+    pivot: {x: 0.30434784, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 149
+      width: 46
+      height: 20
+    spriteID: 339c2e0a6540e4c499e086055ff97aae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 149}
+  - name: microwave 1_Frame_34
+    originalName: 
+    pivot: {x: 0.3148148, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 4
+      width: 54
+      height: 20
+    spriteID: 2c9596aa524150844a40cd6bc2fb5b3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 4}
+  - name: microwave 1_Frame_35
+    originalName: 
+    pivot: {x: 0.18749997, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 448
+      width: 32
+      height: 20
+    spriteID: fb1c27a2aacd04c4abd5e57b5d13e9f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 448}
+  - name: microwave 1_Frame_36
+    originalName: 
+    pivot: {x: 0.18749997, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 476
+      width: 32
+      height: 20
+    spriteID: 1cdda4288f5e9f04fb61962e25fc5fab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 476}
+  - name: microwave 1_Frame_37
+    originalName: 
+    pivot: {x: 0.18749997, y: -0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 31
+      width: 32
+      height: 20
+    spriteID: 77994a9d61da52f4e835f71d1c801a83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 31}
+  - name: microwave 1_Frame_38
+    originalName: 
+    pivot: {x: 0.54285717, y: -1.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 59
+      width: 35
+      height: 16
+    spriteID: dfb8345bc6b8f3b4f82783f493509bcc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 59}
+  - name: microwave 1_Frame_39
+    originalName: 
+    pivot: {x: 0.5588236, y: -1.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 131
+      width: 34
+      height: 16
+    spriteID: 5771305cee0891c4baa7cf68c8aca927
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 131}
+  - name: microwave 1_Frame_40
+    originalName: 
+    pivot: {x: 0.5294118, y: -1.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 155
+      width: 34
+      height: 16
+    spriteID: 0ed4bc929076e714f953d7981253a8ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 155}
+  - name: microwave 1_Frame_41
+    originalName: 
+    pivot: {x: 0.54285717, y: -1.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 83
+      width: 35
+      height: 16
+    spriteID: 1280f0700b6a95f429a6488f1255768f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 83}
+  - name: microwave 1_Frame_42
+    originalName: 
+    pivot: {x: 0.54285717, y: -1.875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 107
+      width: 35
+      height: 16
+    spriteID: c8cb7b574a1e9d549bcbf7bb9d018359
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 107}
+  - name: microwave 1_Frame_43
+    originalName: 
+    pivot: {x: 1.4545454, y: -2.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 231
+      y: 59
+      width: 11
+      height: 12
+    spriteID: 6953c3b7c8bf9ab44a7bc90e0b339fa8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 231, y: 59}
+  - name: microwave 1_Frame_44
+    originalName: 
+    pivot: {x: 0.90909094, y: -1.08}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 131
+      width: 22
+      height: 25
+    spriteID: 58a0dc073328fd94ba3673c77aa9d4e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 131}
+  - name: microwave 1_Frame_45
+    originalName: 
+    pivot: {x: 0.74193543, y: -0.7741936}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 110
+      width: 31
+      height: 31
+    spriteID: 521b65d1d2c36dd4fabc663c4d04d31c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 110}
+  - name: microwave 1_Frame_46
+    originalName: 
+    pivot: {x: 0.6734694, y: -0.3409091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 338
+      width: 49
+      height: 44
+    spriteID: 7a644d7daf9f33d42afe06907df85a7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 338}
+  - name: microwave 1_Frame_47
+    originalName: 
+    pivot: {x: 0.609375, y: -0.11290322}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 90
+      width: 64
+      height: 62
+    spriteID: 95131443c5ecd984692ee6fc024cc590
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 90}
+  - name: microwave 1_Frame_48
+    originalName: 
+    pivot: {x: 0.5405405, y: -0.025641028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 74
+      height: 78
+    spriteID: 452848870c5b75546ab1fba7e60ee1cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 206946364
+    name: microwave 1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: microwave 1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 2a51fc9f198cc7140b6434fe23011fcf
+    - name: microwave 1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 3868d4387112b6e47999551342d7af18
+    - name: microwave 1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 23
+      spriteId: 9e8a1577f96e54c40bf45ec9ef85170a
+    - name: microwave 1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 24
+      spriteId: b9ac17d00967bff4c937229a9d41e0b6
+    - name: microwave 1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 56fa7b246d471df448bf5349332ff7a1
+    - name: microwave 1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 27
+        y: 19
+        width: 32
+        height: 24
+      spriteId: e897f179ed21cb442ab08a29ba133496
+    - name: microwave 1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 27
+        y: 17
+        width: 32
+        height: 25
+      spriteId: 0ebcc268ae437de4d870dd74d9d3c234
+    - name: microwave 1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 24
+      spriteId: a298f140bf91f2740994ef6f5a9adc32
+    - name: microwave 1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 27
+        y: 19
+        width: 32
+        height: 24
+      spriteId: 00395e46a2ae5d640ab32c1c5a3ee092
+    - name: microwave 1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 27
+        y: 17
+        width: 32
+        height: 25
+      spriteId: 9eff52866ae082942b641a589a37d8f7
+    - name: microwave 1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: a802f21c6c5bc9b468207e921370becd
+    - name: microwave 1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 28
+        y: 16
+        width: 32
+        height: 24
+      spriteId: 8865c1d6942e84b4d9e47e7dbfcce3c4
+    - name: microwave 1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 29
+        y: 16
+        width: 32
+        height: 23
+      spriteId: f07ea706aa84a5e42a4346277223134a
+    - name: microwave 1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 29
+        y: 16
+        width: 32
+        height: 23
+      spriteId: 4d15d7e6e890eac4083bba452f0453b2
+    - name: microwave 1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 22
+        y: 16
+        width: 35
+        height: 30
+      spriteId: 6a10b68ddc9620c4a960e0113e762881
+    - name: microwave 1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1
+        y: 16
+        width: 56
+        height: 37
+      spriteId: 8fec003b716988d43b86ddad0c0d0fb3
+    - name: microwave 1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 1
+        y: 16
+        width: 56
+        height: 46
+      spriteId: d2c338213f3f8bb42a5a04e0ed6fd0bf
+    - name: microwave 1_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1
+        y: 16
+        width: 56
+        height: 52
+      spriteId: f0b0e716e1e311b4ea282d01b2dd1dd3
+    - name: microwave 1_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 1
+        y: 16
+        width: 56
+        height: 56
+      spriteId: 83e9e89f17dacdb44a0f931136ac278e
+    - name: microwave 1_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 1
+        y: 16
+        width: 56
+        height: 25
+      spriteId: 32e6ad207e3e2174b8c9e34cde3b29c7
+    - name: microwave 1_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 12
+        y: 16
+        width: 45
+        height: 25
+      spriteId: 8848d8983a2a3ea41ba5be00a4f2b04b
+    - name: microwave 1_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 25
+        y: 16
+        width: 34
+        height: 25
+      spriteId: f38aa84722be14f48bb169f708c5cc3a
+    - name: microwave 1_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 862f46abf7c78fc4da54b3c460432640
+    - name: microwave 1_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 28
+        y: 16
+        width: 32
+        height: 26
+      spriteId: f71f6aee4a0d0e447a29af27929dbcc6
+    - name: microwave 1_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 32
+      spriteId: 6a3ad8106075ca747add71dfbbad9a42
+    - name: microwave 1_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 2191f77940a2d4544be6bd989fe42cdd
+    - name: microwave 1_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 30
+        y: 16
+        width: 32
+        height: 23
+      spriteId: 5e1ccb56089e18743a63890db8cb9cf8
+    - name: microwave 1_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 30
+        y: 16
+        width: 32
+        height: 23
+      spriteId: 65d91f98144b9f748a80d5966fed7caa
+    - name: microwave 1_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 28
+        y: 16
+        width: 32
+        height: 24
+      spriteId: 2f0fd550dd5c03d4da82ea50375fbf8e
+    - name: microwave 1_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 27
+        y: 16
+        width: 32
+        height: 25
+      spriteId: 479ffa221c620d647ae30563cdb380de
+    - name: microwave 1_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 30
+        y: 16
+        width: 32
+        height: 23
+      spriteId: 9006408eeb02c7e45b6712891188562a
+    - name: microwave 1_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 32
+        y: 16
+        width: 36
+        height: 19
+      spriteId: 795093519d8342446b75766b7b828a00
+    - name: microwave 1_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 28
+        y: 16
+        width: 42
+        height: 20
+      spriteId: 2bbb88940c1f2a94a81bcde799311b6c
+    - name: microwave 1_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 26
+        y: 16
+        width: 46
+        height: 20
+      spriteId: 339c2e0a6540e4c499e086055ff97aae
+    - name: microwave 1_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 23
+        y: 16
+        width: 54
+        height: 20
+      spriteId: 2c9596aa524150844a40cd6bc2fb5b3f
+    - name: microwave 1_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 34
+        y: 16
+        width: 32
+        height: 20
+      spriteId: fb1c27a2aacd04c4abd5e57b5d13e9f1
+    - name: microwave 1_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 34
+        y: 16
+        width: 32
+        height: 20
+      spriteId: 1cdda4288f5e9f04fb61962e25fc5fab
+    - name: microwave 1_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 34
+        y: 16
+        width: 32
+        height: 20
+      spriteId: 77994a9d61da52f4e835f71d1c801a83
+    - name: microwave 1_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 21
+        y: 30
+        width: 35
+        height: 16
+      spriteId: dfb8345bc6b8f3b4f82783f493509bcc
+    - name: microwave 1_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 21
+        y: 30
+        width: 34
+        height: 16
+      spriteId: 5771305cee0891c4baa7cf68c8aca927
+    - name: microwave 1_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 22
+        y: 30
+        width: 34
+        height: 16
+      spriteId: 0ed4bc929076e714f953d7981253a8ae
+    - name: microwave 1_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 21
+        y: 30
+        width: 35
+        height: 16
+      spriteId: 1280f0700b6a95f429a6488f1255768f
+    - name: microwave 1_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 21
+        y: 30
+        width: 35
+        height: 16
+      spriteId: c8cb7b574a1e9d549bcbf7bb9d018359
+    - name: microwave 1_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 24
+        y: 33
+        width: 11
+        height: 12
+      spriteId: 6953c3b7c8bf9ab44a7bc90e0b339fa8
+    - name: microwave 1_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 20
+        y: 27
+        width: 22
+        height: 25
+      spriteId: 58a0dc073328fd94ba3673c77aa9d4e0
+    - name: microwave 1_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 17
+        y: 24
+        width: 31
+        height: 31
+      spriteId: 521b65d1d2c36dd4fabc663c4d04d31c
+    - name: microwave 1_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 7
+        y: 15
+        width: 49
+        height: 44
+      spriteId: 7a644d7daf9f33d42afe06907df85a7a
+    - name: microwave 1_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 1
+        y: 7
+        width: 64
+        height: 62
+      spriteId: 95131443c5ecd984692ee6fc024cc590
+    - name: microwave 1_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 0
+        y: 2
+        width: 74
+        height: 78
+      spriteId: 452848870c5b75546ab1fba7e60ee1cc
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 80}
