@@ -1546,7 +1546,67 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laser_attack_forward_0: 497439557069096977
+      laser_attack_forward_1: -8471359217906022938
+      laser_attack_forward_10: 3183885197599974682
+      laser_attack_forward_11: -5896420157050873614
+      laser_attack_forward_12: 8221431150640720909
+      laser_attack_forward_13: 4861264838610906388
+      laser_attack_forward_14: 7516588310882919408
+      laser_attack_forward_15: 7925271755966545620
+      laser_attack_forward_16: -7298868810086370361
+      laser_attack_forward_17: 8265285362963033171
+      laser_attack_forward_18: -3552430995977743039
+      laser_attack_forward_19: 5795327544377487288
+      laser_attack_forward_2: -5406519284693442729
+      laser_attack_forward_20: -7580392896217216746
+      laser_attack_forward_21: -1725498604329904920
+      laser_attack_forward_22: -1065729883743388850
+      laser_attack_forward_23: -6277605673517835629
+      laser_attack_forward_24: 5616238353340019942
+      laser_attack_forward_25: -5019986430418803398
+      laser_attack_forward_26: 4553577469207567953
+      laser_attack_forward_27: -4797812406731259059
+      laser_attack_forward_28: -3295723966060453651
+      laser_attack_forward_29: 4248085601963981626
+      laser_attack_forward_3: 2711065963139953554
+      laser_attack_forward_30: 5162742198719759924
+      laser_attack_forward_31: 4429877690838680961
+      laser_attack_forward_32: 8579698757620274365
+      laser_attack_forward_33: -5486658381887014891
+      laser_attack_forward_34: 8584776229032281686
+      laser_attack_forward_35: -5029623844122625688
+      laser_attack_forward_36: -2617767258545688514
+      laser_attack_forward_37: -9061604707465101578
+      laser_attack_forward_38: 8947845015958200287
+      laser_attack_forward_39: -2791799632550820865
+      laser_attack_forward_4: -6488685898539352088
+      laser_attack_forward_40: 7405614716132746902
+      laser_attack_forward_41: 6396660088546682278
+      laser_attack_forward_42: -4388269603894386436
+      laser_attack_forward_43: -5651871468780160205
+      laser_attack_forward_44: 6260274923230718730
+      laser_attack_forward_45: 8161237167917225318
+      laser_attack_forward_46: 2013431850495872448
+      laser_attack_forward_47: -5246561717049877134
+      laser_attack_forward_48: 4768281749626297790
+      laser_attack_forward_49: -6094904494824853192
+      laser_attack_forward_5: -6454759915777025913
+      laser_attack_forward_50: -8867413685458205992
+      laser_attack_forward_51: 7530481143755571249
+      laser_attack_forward_52: 503921098108304017
+      laser_attack_forward_53: 8622988301405579201
+      laser_attack_forward_54: -7674929038012729925
+      laser_attack_forward_55: 643722206239331881
+      laser_attack_forward_56: 9155212899152582225
+      laser_attack_forward_57: 8502387017709564949
+      laser_attack_forward_58: 3937862266920135443
+      laser_attack_forward_59: 411907897271787254
+      laser_attack_forward_6: -5554118934987061534
+      laser_attack_forward_7: 6335454598743395157
+      laser_attack_forward_8: 3914096819281756709
+      laser_attack_forward_9: -4890218466682251644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

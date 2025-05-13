@@ -562,7 +562,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      walk_change_direction_0: 4666537971175085299
+      walk_change_direction_1: -354237538791939915
+      walk_change_direction_10: -3948913136834748728
+      walk_change_direction_11: 302933599216925255
+      walk_change_direction_12: 7118033953533117986
+      walk_change_direction_13: -1425696374942587216
+      walk_change_direction_14: 2808015979515333494
+      walk_change_direction_15: 3003108535865136141
+      walk_change_direction_16: 7826527677965742548
+      walk_change_direction_17: 4401638680873597543
+      walk_change_direction_18: 2086751051828698848
+      walk_change_direction_2: -5362691960241641526
+      walk_change_direction_3: -7771819235824067782
+      walk_change_direction_4: -7606580443192117138
+      walk_change_direction_5: 6398557290425011199
+      walk_change_direction_6: -7154083299994483720
+      walk_change_direction_7: 5959039769897658811
+      walk_change_direction_8: -3174147169269858836
+      walk_change_direction_9: -1702414790088432757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

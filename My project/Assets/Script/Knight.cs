@@ -3,129 +3,114 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Knight : MonoBehaviour {
-    private Transform target; // variável para saber quem o inimigo vai perseguir
+        private Transform target; // variável para saber quem o inimigo vai perseguir
     private Animator animator; // pode fazer as animações
 
-    [Header("Movimento")] // cria um cabeçalho no Inspector para variáveis de movimento
+    [Header("Movimento")] // cabeçalho no Inspector para variáveis de movimento
     public float speed; // velocidade do inimigo
-    public float visionRadius; // radio de visão para o inimigo ver o player
+    public float visionRadius; // raio de visão para o inimigo ver o player
 
-    [Header("Ataque")] // cria um cabeçalho no Inspector para variáveis de ataque
+    [Header("Ataque")] // cabeçalho para variáveis de ataque
     public float attackOffset; // distância horizontal do ponto de ataque a partir do centro
-    public float attackRadius; // raio para o ataque da espada
+    public float attackRadius; // raio para o ataque do minotauro
     public LayerMask Player; // saber a layer do player para atacar ele
 
     [Header("Tempos")] // cabeçalho para variáveis de tempo
-    public float attackHitDelay; // isso para o ataque sair antes de dar o dano
-    public float attackAnimDuration; // tempo que dura a animação de ataque
-    public float attackCooldown; // cooldown entre um ataque e outro
+    public float attackHitDelay; // delay antes do hit do ataque
+    public float attackAnimDuration; // tempo de duração da animação de ataque
+    public float attackCooldown; // cooldown entre ataques
 
-    private bool canAttack = true; // saber se ele pode atacar novamente ou não
-
+    private bool canAttack = true; // controlar se pode atacar novamente
 
     void Start() {
         animator = GetComponent<Animator>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); // targetar o player para ele seguir
+        target   = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); // targetar o player para perseguir
     }
 
     void Update() {
         LookPlayer();
 
-        if(target != null) { // se tiver um alvo
+        if (target != null) { // se tiver um alvo
             FaceTarget();
 
-            Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // vai fazer pela colisão com o Player
-            if(hits.Length > 0) { // se colidir com o Player (o attackRadius)
-                Attack(); // ataca
+            Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // colisão com o Player
+            if (hits.Length > 0) { // se colidir, ataca
+                Attack();
+            } else {
+                FollowPlayer(); // se não colidir, segue o player
             }
-            else { // se não colidir
-                FollowPlayer(); // segue o player
-            }
-        }
-        else { // se não tiver um alvo
+        } else { // sem alvo
             StopMoving(); // para de se mover
         }
     }
 
-    private void FaceTarget() { // mudar a escala quando virar de lado
-        Vector3 scale = transform.localScale; // pegar a posição
-        if(target.position.x > transform.position.x) { // se o player estiver na esquerda
-            scale.x = Mathf.Abs(scale.x); // fica normal
+    private void LookPlayer() {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, visionRadius); // pegar todos colisores na cena
+        target = null; // resetar target
+        foreach (var hit in hits) {
+            if (hit.CompareTag("Player")) { // se achar o Player
+                target = hit.transform; // seta o target
+                break; // sai do loop
+            }
         }
-        else { // se o player estiver na direita
-            scale.x = -Mathf.Abs(scale.x); // inverte o lado
+    }
+
+    private void FaceTarget() { // vira para o player
+        Vector3 scale = transform.localScale;
+        if (target.position.x > transform.position.x) {
+            scale.x = Mathf.Abs(scale.x); // fica normal
+        } else {
+            scale.x = -Mathf.Abs(scale.x); // inverte no eixo X
         }
         transform.localScale = scale;
     }
 
     private Vector2 GetAttackPosition() {
-        float dir = Mathf.Sign(transform.localScale.x); // obtém direção: 1 para direita, -1 para esquerda
-        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
+        float dir = Mathf.Sign(transform.localScale.x); // 1 direita, -1 esquerda
+        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // posição de ataque
     }
 
-    private void FollowPlayer() { // função para seguir a posição do jogador
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime); // atualizar sua posição para seguir o player
-        animator.SetBool("walk", true);
+    private void FollowPlayer() { // segue o player
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        animator.SetBool("walk", true); // animação de andar
     }
 
-    private void StopMoving() { // função para ele ficar parado quando não ver o player
-        // fica parado, não faz nada
+    private void StopMoving() { // para de andar
         animator.SetBool("walk", false);
-    }
-
-    private void LookPlayer() { // função para procurar o player
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, visionRadius); // pega todos os colisores presentes na cena -> player, ground etc
-        target = null; // seta como null
-
-        foreach (var hit in hits) { // percorre todos os colisores
-            if (hit.CompareTag("Player")) { // se um dos colisores for player
-                target = hit.transform; // seta o targer para o player
-                break; // não precisa mais percorrer a lista
-            }
-        }
     }
 
     private void Attack() {
-        if(!canAttack) {
-            return; // se estiver atacando retorna
-        }
-        canAttack = false; // não pode mais atacar, está em cooldown
+        if (!canAttack) return; // se não pode atacar, sai
+        canAttack = false;
 
         animator.SetBool("walk", false);
-        animator.SetTrigger("attack"); // realiza a animação de ataque
+        animator.SetTrigger("attack"); // dispara animação de ataque
 
-        Invoke("PerformAttackHit", attackHitDelay); // espera um pouco para atacar com o attackHitDelay
-        Invoke("EndAttackAnim", attackAnimDuration);
-        Invoke("ResetCanAttack", attackCooldown);
+        Invoke("PerformAttackHit", attackHitDelay); // delay antes do hit
+        Invoke("EndAttackAnim", attackAnimDuration); // fim da animação
+        Invoke("ResetCanAttack", attackCooldown); // resetar cooldown
     }
 
-    private void EndAttackAnim() { // animação para quando acabar o ataque
-        animator.CrossFade("knight_idle", 0f); // faz a transição imediata para estado "knight_idle"
-    }
-
-    private void PerformAttackHit() { // função para atacar o player e dar dano nele
-        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player);
-        foreach (Collider2D playerGameObject in player) {
-            PlayerHealth.Instance.TakeDamage();
+    private void PerformAttackHit() { // aplica o dano
+        Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player);
+        foreach (var hit in hits) {
+            PlayerHealth.Instance.TakeDamage(); // dá dano ao player
         }
     }
 
-    private void ResetCanAttack() { // após a cooldown de ataque
-        canAttack = true; // e pode atacar novamente
+    private void EndAttackAnim() { // ao terminar a animação
+        animator.CrossFade("minotauro_idle", 0f); // volta para idle
     }
 
-    private void OnDrawGizmosSelected() { // apenas representação visual desse raio na unity para testar
-        Gizmos.color = Color.yellow; // define a cor como amarelo para identificação
+    private void ResetCanAttack() { // liberar novo ataque
+        canAttack = true;
+    }
+
+    private void OnDrawGizmosSelected() { // desenhar gizmos no editor
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRadius); // raio de visão
-
-        Gizmos.color = Color.red; // define a cor como vermelha
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius); // raio de ataque
-    }
-
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Hole") { // 6 é o layer que eu criei para Ground e 9 para plataforma
-            Destroy(gameObject);
-        }
     }
 
 }

@@ -1258,7 +1258,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      idle_look_up_0: 3719751191033865195
+      idle_look_up_1: 3766016275495652786
+      idle_look_up_10: 1312489847259107295
+      idle_look_up_11: -3792810989531552980
+      idle_look_up_12: -9127839165682232650
+      idle_look_up_13: 1015802666566775074
+      idle_look_up_14: -2359207238217455629
+      idle_look_up_15: 2730925755734074276
+      idle_look_up_16: -8581366319296312395
+      idle_look_up_17: -3011052842357940813
+      idle_look_up_18: -3116486872330715114
+      idle_look_up_19: -6210365501010683659
+      idle_look_up_2: 1608493721165526492
+      idle_look_up_20: 1992202571175697263
+      idle_look_up_21: 7361604593566849269
+      idle_look_up_22: 8276725956474968764
+      idle_look_up_23: -6940427249489412254
+      idle_look_up_24: -3833483701290589039
+      idle_look_up_25: -3330809209972975615
+      idle_look_up_26: 1385061703675446720
+      idle_look_up_27: -6838663530277035951
+      idle_look_up_28: 3325282952836307874
+      idle_look_up_29: -3765811968576514012
+      idle_look_up_3: -8994186942376650601
+      idle_look_up_30: 2639462640001452818
+      idle_look_up_31: 450599427496102801
+      idle_look_up_32: -8433744061856687746
+      idle_look_up_33: -775324941029887436
+      idle_look_up_34: -8332685229821817260
+      idle_look_up_35: 372998475279150089
+      idle_look_up_36: 3526490518089538176
+      idle_look_up_37: 5300068861225769758
+      idle_look_up_38: 8479584507907322418
+      idle_look_up_39: -4738312749696592196
+      idle_look_up_4: 2294674071710746324
+      idle_look_up_40: 7530733631292159099
+      idle_look_up_41: -5907125802406445858
+      idle_look_up_42: -7274452677662717965
+      idle_look_up_43: -6316246416594603461
+      idle_look_up_44: 1647089093172282302
+      idle_look_up_45: 3985366546651174901
+      idle_look_up_46: 5864451765613200242
+      idle_look_up_47: 4917136239654215797
+      idle_look_up_5: 3521264089564067557
+      idle_look_up_6: -2916749930090022099
+      idle_look_up_7: 4627581510061073109
+      idle_look_up_8: -8452826223310045287
+      idle_look_up_9: 628654248280342474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

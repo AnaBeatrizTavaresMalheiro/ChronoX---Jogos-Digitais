@@ -346,7 +346,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dead-eyes_0: -3156478850255654893
+      dead-eyes_1: -1953734203003361612
+      dead-eyes_2: 7312290294285378515
+      dead-eyes_3: 6226820076935233954
+      dead-eyes_4: -3617537436987579892
+      dead-eyes_5: -8523697186866907114
+      dead-eyes_6: -8541672293531049952
+      dead-eyes_7: -6402069346371954625
+      dead-eyes_8: -3724922015637773126
+      dead-eyes_9: 6769343122565388181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

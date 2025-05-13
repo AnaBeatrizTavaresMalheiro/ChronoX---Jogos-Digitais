@@ -19,7 +19,7 @@ public class Player : MonoBehaviour {
     [Header("Ataque")] // cria um cabeçalho no Inspector para variáveis de ataque
     public float attackOffset; // distância horizontal do ponto de ataque a partir do centro
     public float attackRadius; // raio para o ataque da espada
-    public LayerMask Knight; // saber a layer do player para atacar ele
+    public LayerMask Enemy; // saber a layer do knight e do minotauro para atacar ele -> juntar as duas no inspector
 
     [Header("Tempos")] // cabeçalho para variáveis de tempo
     public float attackHitDelay; // isso para o ataque sair antes de dar o dano
@@ -178,11 +178,18 @@ public class Player : MonoBehaviour {
     }
 
     private void PerformAttackHit() { // realizar o ataque
-        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Knight); // procura com a layer Knight
+        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Enemy); // procura com a layer Knight e Minotaur
         foreach (Collider2D playerGameObject in player) {
+            // se for um Knight, aplica dano nele
             var each_knight = playerGameObject.GetComponent<KnightHealth>(); // cada knight é próprio, tem suas próprias vidas e tomam seu próprio dano
             if(each_knight != null) {
                 each_knight.TakeDamage(); // da dano
+            }
+
+            // se for um Minotaur, aplica dano nele
+            var mh = playerGameObject.GetComponent<MinotaurHealth>();
+            if (mh != null) {
+                mh.TakeDamage(); // da dano
             }
         }
     }

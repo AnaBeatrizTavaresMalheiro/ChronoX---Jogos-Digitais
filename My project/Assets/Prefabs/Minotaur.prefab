@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 819482810367992208}
   - component: {fileID: 4519132809542870838}
   - component: {fileID: 3488540390965601745}
+  - component: {fileID: 6877138963983719125}
+  - component: {fileID: 2797897457286316014}
   m_Layer: 0
   m_Name: Minotaur
   m_TagString: Untagged
@@ -109,3 +111,40 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6877138963983719125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414630023013217918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f6bd92b2875f64bb90bf17a8d37fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  visionRadius: 13
+  attackOffset: 1
+  attackRadius: 1
+  Player:
+    serializedVersion: 2
+    m_Bits: 0
+  attackHitDelay: 1
+  attackAnimDuration: 0.4
+  attackCooldown: 2
+  contactAttackDelay: 1
+--- !u!114 &2797897457286316014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414630023013217918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e6d85e1e1113b48923e888b3539f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 5
+  dieDuration: 0.8

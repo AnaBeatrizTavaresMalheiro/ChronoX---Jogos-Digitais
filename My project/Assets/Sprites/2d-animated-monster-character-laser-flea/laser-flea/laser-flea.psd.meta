@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laser-flea_0: 7096948748283685285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

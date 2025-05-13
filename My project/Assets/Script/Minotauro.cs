@@ -19,6 +19,7 @@ public class Minotauro : MonoBehaviour {
     public float attackHitDelay; // isso para o ataque sair antes de dar o dano
     public float attackAnimDuration; // tempo que dura a animação de ataque
     public float attackCooldown; // cooldown entre um ataque e outro
+    public float contactAttackDelay; // delay para ele atacar o player quando tocar nele
 
     private bool canAttack = true; // saber se ele pode atacar novamente ou não
     void Start() {
@@ -35,7 +36,11 @@ public class Minotauro : MonoBehaviour {
 
             Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // vai fazer pela colisão com o Player
             if(hits.Length > 0) { // se colidir com o Player (o attackRadius)
-                Attack(); // ataca
+                if(canAttack) {
+                    canAttack = false; // bloqueia até o próximo ResetCanAttack
+                    animator.SetBool("walk", false); // para a animação de andar 
+                    Invoke("Attack", contactAttackDelay); // delay na hora de atacar quando toca no player
+                }
             }
             else { // se não colidir
                 FollowPlayer(); // segue o player
@@ -80,13 +85,7 @@ public class Minotauro : MonoBehaviour {
     }
 
     private void Attack() {
-        if(!canAttack) {
-            return; // se estiver atacando retorna
-        }
-        canAttack = false; // não pode mais atacar, está em cooldown
-
-        //animator.SetBool("walk", false);
-        //animator.SetTrigger("attack"); // realiza a animação de ataque
+        animator.SetTrigger("attack"); // realiza a animação de ataque
 
         Invoke("PerformAttackHit", attackHitDelay); // espera um pouco para atacar com o attackHitDelay
         Invoke("EndAttackAnim", attackAnimDuration);

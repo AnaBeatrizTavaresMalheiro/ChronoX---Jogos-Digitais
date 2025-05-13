@@ -658,7 +658,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laser_flea_0: 3625747758404205014
+      laser_flea_1: -7303163968415506218
+      laser_flea_10: 3996977655481485589
+      laser_flea_11: -392264065117214042
+      laser_flea_12: 5709579242020077136
+      laser_flea_13: 6035138428837842633
+      laser_flea_14: -194973342788759168
+      laser_flea_15: -662250822783913594
+      laser_flea_16: 3956653549124211854
+      laser_flea_17: 8016416306581825568
+      laser_flea_18: -5865914807620732339
+      laser_flea_19: -7372500017417603098
+      laser_flea_2: 4547894154028182820
+      laser_flea_20: -7572458693066127478
+      laser_flea_21: -7590467221603717134
+      laser_flea_22: -2406207819492873302
+      laser_flea_3: 4095518823909592825
+      laser_flea_4: 3101672684708847014
+      laser_flea_5: 6314541239113292858
+      laser_flea_6: 2544255544176981133
+      laser_flea_7: 3584574178754842382
+      laser_flea_8: 8591807962243505682
+      laser_flea_9: -6083215164610843633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
