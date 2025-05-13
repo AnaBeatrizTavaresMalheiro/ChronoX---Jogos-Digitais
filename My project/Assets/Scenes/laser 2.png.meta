@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 960e0528710ab7b40a41b698935fde2d
+guid: f2711218d4ae06e4789dadfe027e161a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -127,10 +127,10 @@ TextureImporter:
       name: laser_0
       rect:
         serializedVersion: 2
-        x: 2369
-        y: 443
-        width: 434
-        height: 49
+        x: 0
+        y: 265
+        width: 5859
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,10 +148,10 @@ TextureImporter:
       name: laser_1
       rect:
         serializedVersion: 2
-        x: 3599
-        y: 432
-        width: 702
-        height: 70
+        x: 2371
+        y: 442
+        width: 430
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: laser_2
       rect:
         serializedVersion: 2
-        x: 4829
-        y: 419
-        width: 968
-        height: 94
+        x: 3599
+        y: 432
+        width: 699
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: laser_3
       rect:
         serializedVersion: 2
-        x: 6060
-        y: 408
-        width: 1234
-        height: 115
+        x: 4829
+        y: 419
+        width: 966
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: laser_4
       rect:
         serializedVersion: 2
-        x: 7319
-        y: 398
-        width: 1465
-        height: 134
+        x: 6059
+        y: 408
+        width: 1237
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: laser_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 265
-        width: 5857
-        height: 134
+        x: 7317
+        y: 312
+        width: 1467
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: laser_6
       rect:
         serializedVersion: 2
-        x: 5970
-        y: 271
-        width: 1336
-        height: 123
+        x: 1059
+        y: 184
+        width: 258
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: laser_7
       rect:
         serializedVersion: 2
-        x: 7906
-        y: 295
-        width: 799
-        height: 78
+        x: 5969
+        y: 270
+        width: 1336
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: laser_8
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 185
-        width: 256
-        height: 34
+        x: 7905
+        y: 0
+        width: 798
+        height: 375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,7 +315,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07b6aefd68c44124eabcf9be149eba4e
     internalID: 0
     vertices: []
     indices: 

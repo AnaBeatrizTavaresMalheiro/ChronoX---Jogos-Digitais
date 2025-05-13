@@ -19,6 +19,7 @@ TagManager:
   - BossHead
   - PlayerFeet
   - BossGround
+  - TrashCan
   layers:
   - Default
   - TransparentFX
