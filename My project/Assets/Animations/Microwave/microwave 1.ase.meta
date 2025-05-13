@@ -2,7 +2,37 @@ fileFormatVersion: 2
 guid: cc6e8c7d20e45e846a6ebdc1a5445e6a
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Attack
+    second: {fileID: 7400000, guid: 8d794765e59407f4d9dfb87126622e39, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Death
+    second: {fileID: 7400000, guid: 3393dcd6f5f782a4197c02dbaef43474, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Hit
+    second: {fileID: 7400000, guid: 527ac322067304f4f99c643f4c4195ef, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: c97f2daf41867d9498cb5af6b0d8297e, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Run
+    second: {fileID: 7400000, guid: 4d7df7d2e04ed014da0538368fb8f177, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: fireball
+    second: {fileID: 7400000, guid: ffad4c639bcc23447be5f7dc7c50e856, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -95,7 +125,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638826767598537433
+  platformSettingsDirtyTick: 638827501131305798
   textureAssetName: 
   singleSpriteImportData:
   - name: 
