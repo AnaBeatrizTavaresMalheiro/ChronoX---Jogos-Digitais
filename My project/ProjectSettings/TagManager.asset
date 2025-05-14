@@ -20,6 +20,9 @@ TagManager:
   - PlayerFeet
   - BossGround
   - TrashCan
+  - LaserUp
+  - LaserRight
+  - LaserLeft
   - Laser
   layers:
   - Default

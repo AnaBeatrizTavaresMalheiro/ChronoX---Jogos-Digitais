@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 
 public class Player : MonoBehaviour {
-
-
-
-
     private SpriteRenderer sr; // para rotacionar o player quando vira de lado
     private Rigidbody2D rb2d; // me permite manipular qualquer variavel no rigidbody la do inspector
     private Animator animator; // poder animar o player
@@ -112,16 +108,31 @@ public class Player : MonoBehaviour {
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse); // para dar um pulinho depois de bater
             PlayerHealth.Instance.TakeDamage();
         }
-        if(collision.gameObject.tag == "Saw") {
+        if(collision.gameObject.tag == "Saw") { // se tocar na serra
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10, ForceMode2D.Impulse); // para dar um pulinho depois de bater
             PlayerHealth.Instance.TakeDamage();
         }
-        if(collision.gameObject.tag == "Smash") {
+        if(collision.gameObject.tag == "Smash") { // se tocar no esmagador
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 15, ForceMode2D.Impulse); // para dar um empurrão para a esquerda
             PlayerHealth.Instance.TakeDamage();
         }
-        if(collision.gameObject.tag == "Hole") {
+        if(collision.gameObject.tag == "Hole") { // se cair no buraco
             PlayerHealth.Instance.InstaKill();
+        }
+        if(collision.gameObject.tag == "LaserUp") { // se cair no laser que te empurra pra cima
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 15, ForceMode2D.Impulse); // para dar um empurrão para a esquerda
+            PlayerHealth.Instance.TakeDamage();
+        }
+        if(collision.gameObject.tag == "LaserLeft") { // se cair no laser que te empurra pra esquerda
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10, ForceMode2D.Impulse); // para dar um empurrão para a esquerda
+            PlayerHealth.Instance.TakeDamage();
+        }
+        if(collision.gameObject.tag == "LaserRight") { // se cair no laser que te empurra pra direita
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 10, ForceMode2D.Impulse); // para dar um empurrão para a esquerda
+            PlayerHealth.Instance.TakeDamage();
+        }
+        if(collision.gameObject.tag == "Laser") { // se cair no laser que te empurra pra direita
+            PlayerHealth.Instance.TakeDamage();
         }
 
     }
