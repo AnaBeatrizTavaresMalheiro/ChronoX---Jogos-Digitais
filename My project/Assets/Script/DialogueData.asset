@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3bb0b6fd2d701f42a8c107528b95530, type: 3}
+  m_Name: DialogueData
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Elena Voss
+    text: "Mas... que roupa \xE9 essa? Isso n\xE3o \xE9 meu jaleco! Onde eu estou?"
+  - name: ???
+    text: "Bem-vinda, Dra. Elena Voss. A ChronoX foi destru\xEDda e voc\xEA foi lan\xE7ada
+      atrav\xE9s de uma fenda temporal. Est\xE1 agora na Era Pr\xE9-Hist\xF3rica."
+  - name: ???
+    text: "Seu traje foi adaptado para sua sobreviv\xEAncia neste ambiente hostil.
+      Sim, voc\xEA continua sendo uma cientista... mas neste momento, precisa lutar
+      como uma guerreira."
+  - name: Elena Voss
+    text: "Essa selva... dinossauros? Isso \xE9 mesmo real?"
+  - name: ???
+    text: "Muito real. E perigoso. H\xE1 pequenos dinossauros espalhados pela floresta
+      \u2014 eles s\xE3o r\xE1pidos, agressivos e v\xE3o tentar impedi-la de avan\xE7ar.
+      Para derrot\xE1-los, pule sobre eles com precis\xE3o."
+  - name: ???
+    text: "Ao final desta era, voc\xEA enfrentar\xE1 um Velociraptor \u2014 ele protege
+      um dos fragmentos da ChronoX. Seu ponto fraco est\xE1 nas costas, ent\xE3o
+      ataque por tr\xE1s para venc\xEA-lo. Voc\xEA s\xF3 poder\xE1 seguir para a
+      pr\xF3xima fase se derrot\xE1-lo."
+  - name: Elena Voss
+    text: Ok. O que eu preciso saber?
+  - name: ???
+    text: "Voc\xEA tem tr\xEAs vidas. Se perder todas, ficar\xE1 presa neste tempo
+      para sempre."
+  - name: ???
+    text: "Comandos b\xE1sicos:\n\nPressione A para se mover para a esquerda.\n\nPressione
+      D para se mover para a direita.\n\nPressione barra de espa\xE7o para pular
+      obst\xE1culos como rios de lava."
+  - name: ???
+    text: 'Lembre-se: sobreviva, colete o fragmento e avance. Estou monitorando seus
+      passos. Boa sorte, Dra. Voss.'
+  - name: Elena Voss
+    text: "Tudo bem. Uma cientista perdida no tempo\u2026 nada que um pouco de f\xEDsica
+      qu\xE2ntica e coragem n\xE3o resolvam."

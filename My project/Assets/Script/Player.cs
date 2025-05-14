@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
+
+
+
     private SpriteRenderer sr; // para rotacionar o player quando vira de lado
     private Rigidbody2D rb2d; // me permite manipular qualquer variavel no rigidbody la do inspector
     private Animator animator; // poder animar o player
@@ -36,6 +39,7 @@ public class Player : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
     }
 
     void Update() {
