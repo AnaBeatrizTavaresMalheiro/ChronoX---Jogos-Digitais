@@ -1,131 +1,76 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Microwave : MonoBehaviour {
-    private Transform target; // variável para saber quem o inimigo vai perseguir
-    private Animator animator; // pode fazer as animações
+public class MicroWave : MonoBehaviour
+{
+    [Header("Movimentação")]
+    [Tooltip("Velocidade de descida do mago")]
+    public float speed = 2f;
 
-    [Header("Movimento")] // cria um cabeçalho no Inspector para variáveis de movimento
-    public float speed; // velocidade do inimigo
-    public float visionRadius; // radio de visão para o inimigo ver o player
+    [Header("Detecção")]
+    [Tooltip("Raio em que o mago consegue 'ver' o player")]
+    public float visionRadius = 5f;
 
-    [Header("Ataque")] // cria um cabeçalho no Inspector para variáveis de ataque
-    public float attackOffset; // distância horizontal do ponto de ataque a partir do centro
-    public float attackRadius; // raio para o ataque da espada
-    public LayerMask Player; // saber a layer do player para atacar ele
+    [Header("Disparo")]
+    [Tooltip("Prefab da bola de fogo (deve ter Rigidbody2D)")]
+    public GameObject fireballPrefab;
+    [Tooltip("Ponto de onde a bola de fogo é instanciada")]
+    public Transform firePoint;
+    [Tooltip("Tempo entre cada disparo em segundos")]
+    public float fireRate = 1f;
 
-    [Header("Tempos")] // cabeçalho para variáveis de tempo
-    public float attackHitDelay; // isso para o ataque sair antes de dar o dano
-    public float attackAnimDuration; // tempo que dura a animação de ataque
-    public float attackCooldown; // cooldown entre um ataque e outro
+    private float fireCooldown = 0f;
+    private Transform player;
 
-    private bool canAttack = true; // saber se ele pode atacar novamente ou não
-
-
-    void Start() {
-        animator = GetComponent<Animator>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); // targetar o player para ele seguir
+    void Start()
+    {
+        // Assume um único objeto com tag "Player" na cena
+        GameObject p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+        else
+            Debug.LogWarning("WizardEnemy: não encontrou GameObject com tag 'Player' na cena.");
     }
 
-    void Update() {
-        LookPlayer();
+    void Update()
+    {
+        // 1) Move sempre para baixo
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
 
-        if(target != null) { // se tiver um alvo
-            FaceTarget();
+        // 2) Atualiza cooldown de disparo
+        fireCooldown -= Time.deltaTime;
 
-            Collider2D[] hits = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player); // vai fazer pela colisão com o Player
-            if(hits.Length > 0) { // se colidir com o Player (o attackRadius)
-                Attack(); // ataca
-            }
-            else { // se não colidir
-                FollowPlayer(); // segue o player
-            }
-        }
-        else { // se não tiver um alvo
-            StopMoving(); // para de se mover
-        }
-    }
-
-    private void FaceTarget() { // mudar a escala quando virar de lado
-        Vector3 scale = transform.localScale; // pegar a posição
-        if(target.position.x > transform.position.x) { // se o player estiver na esquerda
-            scale.x = Mathf.Abs(scale.x); // fica normal
-        }
-        else { // se o player estiver na direita
-            scale.x = -Mathf.Abs(scale.x); // inverte o lado
-        }
-        transform.localScale = scale;
-    }
-
-    private Vector2 GetAttackPosition() {
-        float dir = Mathf.Sign(transform.localScale.x); // obtém direção: 1 para direita, -1 para esquerda
-        return (Vector2)transform.position + Vector2.right * attackOffset * dir; // retorna posição de ataque em mundo
-    }
-
-    private void FollowPlayer() { // função para seguir a posição do jogador
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime); // atualizar sua posição para seguir o player
-        animator.SetBool("walk", true);
-    }
-
-    private void StopMoving() { // função para ele ficar parado quando não ver o player
-        // fica parado, não faz nada
-        animator.SetBool("walk", false);
-    }
-
-    private void LookPlayer() { // função para procurar o player
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, visionRadius); // pega todos os colisores presentes na cena -> player, ground etc
-        target = null; // seta como null
-
-        foreach (var hit in hits) { // percorre todos os colisores
-            if (hit.CompareTag("Player")) { // se um dos colisores for player
-                target = hit.transform; // seta o targer para o player
-                break; // não precisa mais percorrer a lista
+        // 3) Se o player existir e estiver dentro do raio de visão, atira
+        if (player != null && fireCooldown <= 0f)
+        {
+            float dist = Vector2.Distance(transform.position, player.position);
+            if (dist <= visionRadius)
+            {
+                ShootAt(player.position);
+                fireCooldown = fireRate;
             }
         }
     }
 
-    private void Attack() {
-        if(!canAttack) {
-            return; // se estiver atacando retorna
-        }
-        canAttack = false; // não pode mais atacar, está em cooldown
+    void ShootAt(Vector2 targetPosition)
+    {
+        // Calcula direção normalizada do firePoint até o player
+        Vector2 dir = (targetPosition - (Vector2)firePoint.position).normalized;
 
-        animator.SetBool("walk", false);
-        animator.SetTrigger("attack"); // realiza a animação de ataque
+        // Instancia bola de fogo sem rotação
+        GameObject fb = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
 
-        Invoke("PerformAttackHit", attackHitDelay); // espera um pouco para atacar com o attackHitDelay
-        Invoke("EndAttackAnim", attackAnimDuration);
-        Invoke("ResetCanAttack", attackCooldown);
+        // Ajusta velocidade do Rigidbody2D da bola
+        Rigidbody2D rb = fb.GetComponent<Rigidbody2D>();
+        if (rb != null)
+            rb.velocity = dir * fb.GetComponent<FireBall>().speed; 
+        else
+            Debug.LogWarning("WizardEnemy: prefab de fireball não tem Rigidbody2D.");
     }
 
-    private void EndAttackAnim() { // animação para quando acabar o ataque
-        animator.CrossFade("knight_idle", 0f); // faz a transição imediata para estado "knight_idle"
+    // Desenha gizmo do raio de visão no editor
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
-
-    private void PerformAttackHit() { // função para atacar o player e dar dano nele
-        Collider2D[] player = Physics2D.OverlapCircleAll(GetAttackPosition(), attackRadius, Player);
-        foreach (Collider2D playerGameObject in player) {
-            PlayerHealth.Instance.TakeDamage();
-        }
-    }
-
-    private void ResetCanAttack() { // após a cooldown de ataque
-        canAttack = true; // e pode atacar novamente
-    }
-
-    private void OnDrawGizmosSelected() { // apenas representação visual desse raio na unity para testar
-        Gizmos.color = Color.yellow; // define a cor como amarelo para identificação
-        Gizmos.DrawWireSphere(transform.position, visionRadius); // raio de visão
-
-        Gizmos.color = Color.red; // define a cor como vermelha
-        Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius); // raio de ataque
-    }
-
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Hole") { // 6 é o layer que eu criei para Ground e 9 para plataforma
-            Destroy(gameObject);
-        }
-    }
-
 }
