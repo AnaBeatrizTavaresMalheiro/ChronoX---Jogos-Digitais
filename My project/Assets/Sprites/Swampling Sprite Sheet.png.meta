@@ -922,7 +922,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swampling Sprite Sheet_0: 5134906873333365682
+      Swampling Sprite Sheet_1: -676214682731284844
+      Swampling Sprite Sheet_10: 1237251415507574991
+      Swampling Sprite Sheet_11: -1335558595184382939
+      Swampling Sprite Sheet_12: 3874705214619465725
+      Swampling Sprite Sheet_13: -5233569353102646032
+      Swampling Sprite Sheet_14: 4525289646707584632
+      Swampling Sprite Sheet_15: 3988785871348572795
+      Swampling Sprite Sheet_16: -2769717698407954395
+      Swampling Sprite Sheet_17: 349801468599060695
+      Swampling Sprite Sheet_18: 1186029549176749895
+      Swampling Sprite Sheet_19: -8409399925310191888
+      Swampling Sprite Sheet_2: 7478892497430678462
+      Swampling Sprite Sheet_20: -5332285179448844554
+      Swampling Sprite Sheet_21: 5219659759138393840
+      Swampling Sprite Sheet_22: -7559844675733787916
+      Swampling Sprite Sheet_23: 6635091197736526236
+      Swampling Sprite Sheet_24: -93347330106840515
+      Swampling Sprite Sheet_25: -2028863645085710797
+      Swampling Sprite Sheet_26: -8019323872079837027
+      Swampling Sprite Sheet_27: -108484114541420580
+      Swampling Sprite Sheet_28: -1760945173418225338
+      Swampling Sprite Sheet_29: 4402540957738310078
+      Swampling Sprite Sheet_3: -8887868790321334046
+      Swampling Sprite Sheet_30: -7260152498321602257
+      Swampling Sprite Sheet_31: 8192484314737551989
+      Swampling Sprite Sheet_32: 1017329164942795881
+      Swampling Sprite Sheet_33: -5531851946572466903
+      Swampling Sprite Sheet_4: -1730990574032097386
+      Swampling Sprite Sheet_5: -5109753669974273732
+      Swampling Sprite Sheet_6: 5597988545474974541
+      Swampling Sprite Sheet_7: -6665866599571930510
+      Swampling Sprite Sheet_8: 5662098447577734618
+      Swampling Sprite Sheet_9: -3725393807025406036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

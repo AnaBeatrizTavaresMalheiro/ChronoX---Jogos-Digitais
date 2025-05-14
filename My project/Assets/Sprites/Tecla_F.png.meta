@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tecla_F_0: 7695833649400822697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
