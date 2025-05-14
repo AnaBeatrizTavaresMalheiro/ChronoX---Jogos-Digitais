@@ -25,17 +25,33 @@ public class Player : MonoBehaviour {
     public float attackAnimDuration; // tempo que dura a animação de ataque
     public float attackCooldown; // cooldown entre um ataque e outro
 
+    // --- NOVO: configuração de fase ---
+    [Header("Fase de Combate")] 
+    [Tooltip("2 = espada, 3 = magia")]
+    public int currentPhase = 2;
+
+    // --- NOVO: campos para ataque mágico ---
+    [Header("Ataque Mágico")]
+    [Tooltip("Prefab da bola de fogo (deve ter Rigidbody2D)")]
+    public GameObject fireballPrefab;
+    [Tooltip("Ponto de onde a bola de fogo é instanciada")]
+    public Transform firePoint;
+    [Tooltip("Tempo entre cada disparo em segundos")]
+    public float fireRate = 0.5f;
+    private float fireCooldown = 0f;
+
     public bool isJumping; // saber se ele esta pulando ou nao
     public bool doubleJump; // saber se ele esta dando um pulo duplo ou nao
     public bool inStairs; // saber se o personagem esta em cima da escada
     private bool facingLeft = false; // saber qual lado ta
     private bool canAttack = true; // saber se o player pode atacar ou não
+    private Collider2D playerCollider;
 
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
+        playerCollider = GetComponent<Collider2D>();
     }
 
     void Update() {
@@ -43,10 +59,18 @@ public class Player : MonoBehaviour {
         Jump(); // pular
         Climb(); // escalar
 
-        if(Input.GetMouseButtonDown(0)) { // se apertar o botão esquerdo do mouse
-            Attack(); // ataca
-        }
+        // decrementa cooldown de magia
+        if (fireCooldown > 0f)
+            fireCooldown -= Time.deltaTime;
 
+        if(Input.GetMouseButtonDown(0)) { // se apertar o botão esquerdo do mouse
+            if (currentPhase == 2) {
+                Attack(); // ataca com espada
+            }
+            else if (currentPhase == 3) {
+                TryMagicAttack(); // atira fireball
+            }
+        }
     }
 
     void Move() {
@@ -185,6 +209,37 @@ public class Player : MonoBehaviour {
         Invoke("EndAttackAnim", attackAnimDuration);
         Invoke("ResetCanAttack", attackCooldown);
     }
+
+    // === NOVO: tentativa de ataque mágico ===
+    private void TryMagicAttack() {
+        if (fireCooldown > 0f) return;
+        ShootFireball();
+        fireCooldown = fireRate;
+    }
+
+    private void ShootFireball() {
+        // converte posição do mouse para world point
+        Vector3 mouseScreen = Input.mousePosition;
+        Vector3 mouseWorld  = Camera.main.ScreenToWorldPoint(mouseScreen);
+        Vector2 aimDir = ((Vector2)mouseWorld - (Vector2)firePoint.position).normalized;
+
+        // instancia a fireball
+        GameObject fb = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
+
+        // ignora colisão com o player
+        Collider2D fbCol = fb.GetComponent<Collider2D>();
+        if (fbCol != null && playerCollider != null)
+            Physics2D.IgnoreCollision(fbCol, playerCollider);
+
+        // aplica velocidade (Rigidbody2D deve ser Dynamic)
+        Rigidbody2D rb = fb.GetComponent<Rigidbody2D>();
+        if (rb != null) {
+            FireBall fbScript = fb.GetComponent<FireBall>();
+            float speed = fbScript != null ? fbScript.speed : 5f;
+            rb.velocity = aimDir * speed;
+        }
+    }
+
 
     private void EndAttackAnim() { // chamar a animação de idle depois do ataque
         animator.CrossFade("player_idle", 0f); // faz a transição imediata para estado "player_idle"

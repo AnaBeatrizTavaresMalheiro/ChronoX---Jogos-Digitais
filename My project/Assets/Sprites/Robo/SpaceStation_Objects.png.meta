@@ -250,7 +250,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpaceStation_Objects_0: -1987963142160920883
+      SpaceStation_Objects_1: 737905019013949036
+      SpaceStation_Objects_2: -6848704517898048766
+      SpaceStation_Objects_3: -3403913372144428955
+      SpaceStation_Objects_4: -2141659240323020266
+      SpaceStation_Objects_5: -8979878459337897271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

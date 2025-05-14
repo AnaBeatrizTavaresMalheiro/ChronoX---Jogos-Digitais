@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireBall : MonoBehaviour
+public class FireBallPlayer : MonoBehaviour
 {
     [Tooltip("Velocidade da bola de fogo")]
     public float speed = 5f;
@@ -16,10 +16,10 @@ public class FireBall : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         // Aqui você pode detectar colisão com o jogador ou cenário
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("MicroWave"))
         {
             // Exemplo: colide com o player
-            col.GetComponent<PlayerHealth>()?.TakeDamage();
+            //col.GetComponent<MicroWaveHealth>()?.TakeDamage();
         }
         // Destrói ao colidir em qualquer coisa
         Destroy(gameObject);

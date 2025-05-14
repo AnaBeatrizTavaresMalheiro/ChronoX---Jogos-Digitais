@@ -2,72 +2,102 @@ using UnityEngine;
 
 public class MicroWave : MonoBehaviour
 {
-    [Header("Movimentação")]
-    [Tooltip("Velocidade de descida do mago")]
+    [Header("Movimentação Vertical")]
     public float speed = 2f;
+    public float verticalDistance = 2f;
 
     [Header("Detecção")]
-    [Tooltip("Raio em que o mago consegue 'ver' o player")]
     public float visionRadius = 5f;
 
     [Header("Disparo")]
-    [Tooltip("Prefab da bola de fogo (deve ter Rigidbody2D)")]
     public GameObject fireballPrefab;
-    [Tooltip("Ponto de onde a bola de fogo é instanciada")]
     public Transform firePoint;
-    [Tooltip("Tempo entre cada disparo em segundos")]
     public float fireRate = 1f;
 
+    [Header("Ajuste de Mira")]
+    [Tooltip("Quanto abaixo do centro do player a fireball deve mirar")]
+    public float aimYOffset = 0.5f;
+
+    private Vector2 startPos;
+    private Vector2 targetPos;
+    private int direction = 1;       
     private float fireCooldown = 0f;
     private Transform player;
+    private Collider2D shooterCollider;
+
+    void Awake()
+    {
+        startPos       = transform.position;
+        targetPos      = startPos + Vector2.up * verticalDistance;
+        shooterCollider = GetComponent<Collider2D>();
+    }
 
     void Start()
     {
-        // Assume um único objeto com tag "Player" na cena
         GameObject p = GameObject.FindGameObjectWithTag("Player");
-        if (p != null)
-            player = p.transform;
-        else
-            Debug.LogWarning("WizardEnemy: não encontrou GameObject com tag 'Player' na cena.");
+        if (p != null) player = p.transform;
+        else           Debug.LogError("MicroWave: não encontrou GameObject com tag 'Player'.");
     }
 
     void Update()
     {
-        // 1) Move sempre para baixo
-        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        MoveVertical();
+        HandleShooting();
+    }
 
-        // 2) Atualiza cooldown de disparo
+    void MoveVertical()
+    {
+        Vector2 destino = (direction == 1) ? targetPos : startPos;
+        transform.position = Vector2.MoveTowards(transform.position, destino, speed * Time.deltaTime);
+        if (Vector2.Distance(transform.position, targetPos) < 0.01f) direction = -1;
+        else if (Vector2.Distance(transform.position, startPos) < 0.01f) direction = 1;
+    }
+
+    void HandleShooting()
+    {
+        if (player == null) return;
+
         fireCooldown -= Time.deltaTime;
-
-        // 3) Se o player existir e estiver dentro do raio de visão, atira
-        if (player != null && fireCooldown <= 0f)
+        float dist = Vector2.Distance(transform.position, player.position);
+        if (fireCooldown <= 0f && dist <= visionRadius)
         {
-            float dist = Vector2.Distance(transform.position, player.position);
-            if (dist <= visionRadius)
-            {
-                ShootAt(player.position);
-                fireCooldown = fireRate;
-            }
+            ShootAtPlayer();
+            fireCooldown = fireRate;
         }
     }
 
-    void ShootAt(Vector2 targetPosition)
+    void ShootAtPlayer()
     {
-        // Calcula direção normalizada do firePoint até o player
-        Vector2 dir = (targetPosition - (Vector2)firePoint.position).normalized;
+        // 1) Calcula o centro do collider do player
+        Vector2 aimPoint = player.position;
+        Collider2D playerCol = player.GetComponent<Collider2D>();
+        if (playerCol != null)
+            aimPoint = playerCol.bounds.center;
 
-        // Instancia bola de fogo sem rotação
+        // 2) Aplica offset para mirar mais para baixo
+        aimPoint += Vector2.down * aimYOffset;
+
+        // 3) Normaliza direção
+        Vector2 dir = (aimPoint - (Vector2)firePoint.position).normalized;
+
+        // 4) Instancia a fireball
         GameObject fb = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
 
-        // Ajusta velocidade do Rigidbody2D da bola
+        // 5) Ignora colisão com o mago
+        Collider2D fbCol = fb.GetComponent<Collider2D>();
+        if (fbCol != null && shooterCollider != null)
+            Physics2D.IgnoreCollision(fbCol, shooterCollider);
+
+        // 6) Dá velocidade
         Rigidbody2D rb = fb.GetComponent<Rigidbody2D>();
         if (rb != null)
-            rb.velocity = dir * fb.GetComponent<FireBall>().speed; 
-        else
-            Debug.LogWarning("WizardEnemy: prefab de fireball não tem Rigidbody2D.");
+        {
+            FireBall fbScript = fb.GetComponent<FireBall>();
+            float fbSpeed = (fbScript != null) ? fbScript.speed : 5f;
+            rb.velocity = dir * fbSpeed;
+        }
     }
 
-    // Desenha gizmo do raio de visão no editor
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
