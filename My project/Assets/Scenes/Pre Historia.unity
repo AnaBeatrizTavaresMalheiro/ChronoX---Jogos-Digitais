@@ -11249,6 +11249,8 @@ MonoBehaviour:
   - speaker: 
     text: 
     characterSprite: {fileID: 0}
+  dialogoFase2: []
+  dialogoFase3: []
 --- !u!1 &1126800550
 GameObject:
   m_ObjectHideFlags: 0
@@ -44832,11 +44834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715789564270460804, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.913
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 3715789564270460804, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.128
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 5273984948371926600, guid: 0de0a1e6aa80f3446b16ce365045ad27, type: 3}
       propertyPath: m_Enabled

@@ -13,20 +13,35 @@ public class LaserStepMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 startPos;
     private Vector2 targetPos;
+    public bool rotationZ = true;  // se for true fica normal, se for false eh para fazer a movimentação com o laser em 13 graus
     private int direction = 1;  //  1: indo de start→target,  -1: voltando de target→start
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.bodyType     = RigidbodyType2D.Kinematic;
         rb.gravityScale = 0;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
-        // Não é trigger, queremos colisão física
+        rb.constraints  = RigidbodyConstraints2D.FreezeRotation;
         GetComponent<BoxCollider2D>().isTrigger = false;
 
-        startPos  = rb.position;
-        targetPos = startPos + steps;
+        startPos = rb.position;
+
+        // 2) Escolhe steps “puros” ou rotacionados
+        Vector2 usedSteps;
+        if (!rotationZ)
+        {
+            // aplica a rotação Z do GameObject
+            Vector3 w = transform.rotation * new Vector3(steps.x, steps.y, 0f);
+            usedSteps = new Vector2(w.x, w.y);
+        }
+        else
+        {
+            // mantém passos originais sem rotação
+            usedSteps = steps;
+        }
+
+        // 3) Define targetPos uma única vez
+        targetPos = startPos + usedSteps;
     }
 
     void FixedUpdate()

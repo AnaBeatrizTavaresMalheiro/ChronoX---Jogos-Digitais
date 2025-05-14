@@ -58,23 +58,20 @@ public class Dialogue : MonoBehaviour
             new DialogueLine { speaker = "Elena Voss", text = "Vamos lá. Mais um fragmento me espera.", characterSprite = elenaSprite }
         };
 
- 
-
-// Dentro do Start(), após definir dialogoFase1 e dialogoFase2, adicione:
-dialogoFase3 = new DialogueLine[]
-{
-    new DialogueLine { speaker = "Elena Voss", text = "Uau... onde estou agora? Isso parece... o futuro?", characterSprite = elenaSprite },
-    new DialogueLine { speaker = "Elena Voss", text = "Arranha-céus, hologramas, e... espera, aquilo era um drone armado?", characterSprite = elenaSprite },
-    new DialogueLine { speaker = "Host", text = "Dra. Voss, você está em uma metrópole do século XXV, sob domínio de uma inteligência artificial hostil chamada SynTek.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "Sistemas de vigilância escaneiam qualquer movimento. Se for detectada, a IA enviará drones de ataque.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "Evite as câmeras e sensores, esconda-se atrás de estruturas metálicas e use os túneis para avançar com segurança.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "Você poderá usar EMPs (pulso eletromagnético) para desativar os drones temporariamente. Pressione 'E' para ativar.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "O fragmento da ChronoX está no centro de comando da SynTek, protegido por um robô de combate. Ataque seus circuitos dorsais para sobrecarregá-lo.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "Comandos: 'A' para esquerda, 'D' para direita, 'Espaço' para pular, 'E' para EMP.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Host", text = "Boa sorte, Dra. Voss. Este é o teste mais tecnológico até agora.", characterSprite = hostSprite },
-    new DialogueLine { speaker = "Elena Voss", text = "Tecnologia assassina, robôs e uma IA com complexo de deus... só mais uma terça-feira.", characterSprite = elenaSprite },
-    new DialogueLine { speaker = "Elena Voss", text = "Ok, foco! Estou perto do último fragmento. Nada vai me parar agora.", characterSprite = elenaSprite }
-};
+        dialogoFase3 = new DialogueLine[]
+        {
+            new DialogueLine { speaker = "Elena Voss", text = "Uau... onde estou agora? Isso parece... o futuro?", characterSprite = elenaSprite },
+            new DialogueLine { speaker = "Elena Voss", text = "Arranha-céus, hologramas, e... espera, aquilo era um drone armado?", characterSprite = elenaSprite },
+            new DialogueLine { speaker = "Host", text = "Dra. Voss, você está em uma metrópole do século XXV, sob domínio de uma inteligência artificial hostil chamada SynTek.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "Sistemas de vigilância escaneiam qualquer movimento. Se for detectada, a IA enviará drones de ataque.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "Evite as câmeras e sensores, esconda-se atrás de estruturas metálicas e use os túneis para avançar com segurança.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "Você poderá usar EMPs (pulso eletromagnético) para desativar os drones temporariamente. Pressione 'E' para ativar.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "O fragmento da ChronoX está no centro de comando da SynTek, protegido por um robô de combate. Ataque seus circuitos dorsais para sobrecarregá-lo.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "Comandos: 'A' para esquerda, 'D' para direita, 'Espaço' para pular, 'E' para EMP.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Host", text = "Boa sorte, Dra. Voss. Este é o teste mais tecnológico até agora.", characterSprite = hostSprite },
+            new DialogueLine { speaker = "Elena Voss", text = "Tecnologia assassina, robôs e uma IA com complexo de deus... só mais uma terça-feira.", characterSprite = elenaSprite },
+            new DialogueLine { speaker = "Elena Voss", text = "Ok, foco! Estou perto do último fragmento. Nada vai me parar agora.", characterSprite = elenaSprite }
+        };
 
 
 
@@ -88,7 +85,7 @@ dialogoFase3 = new DialogueLine[]
         {
             dialogoAtual = dialogoFase2;
         }
-        else if (nomeCena == "Futuro_teste")
+        else if (nomeCena == "Futuro")
         {
             dialogoAtual = dialogoFase3;
         }
