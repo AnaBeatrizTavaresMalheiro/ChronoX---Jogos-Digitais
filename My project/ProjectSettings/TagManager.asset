@@ -24,6 +24,7 @@ TagManager:
   - LaserRight
   - LaserLeft
   - Laser
+  - MicroWave
   layers:
   - Default
   - TransparentFX
@@ -39,8 +40,8 @@ TagManager:
   - Knight
   - DinoBoss
   - Minotaur
-  - 
-  - 
+  - Laser
+  - MicroWave
   - 
   - 
   - 

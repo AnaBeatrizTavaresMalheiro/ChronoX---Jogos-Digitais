@@ -40,6 +40,10 @@ public class Player : MonoBehaviour {
     public float fireRate = 0.5f;
     private float fireCooldown = 0f;
 
+    [Header("Ajuste de Mira")]
+    [Tooltip("Quanto abaixo do cursor a fireball deve mirar")]
+    public float aimYOffset = 0.5f;
+
     public bool isJumping; // saber se ele esta pulando ou nao
     public bool doubleJump; // saber se ele esta dando um pulo duplo ou nao
     public bool inStairs; // saber se o personagem esta em cima da escada
@@ -210,18 +214,21 @@ public class Player : MonoBehaviour {
         Invoke("ResetCanAttack", attackCooldown);
     }
 
-    // === NOVO: tentativa de ataque mágico ===
-    private void TryMagicAttack() {
+    private void TryMagicAttack() { // aqui ele realiza o ataque se não estiver no cooldown
         if (fireCooldown > 0f) return;
         ShootFireball();
+        animator.SetTrigger("attack");
         fireCooldown = fireRate;
+        Invoke("EndAttackAnim", attackAnimDuration);
     }
 
-    private void ShootFireball() {
+    private void ShootFireball() { // mecanica para atirar a bola de fogo
         // converte posição do mouse para world point
         Vector3 mouseScreen = Input.mousePosition;
         Vector3 mouseWorld  = Camera.main.ScreenToWorldPoint(mouseScreen);
-        Vector2 aimDir = ((Vector2)mouseWorld - (Vector2)firePoint.position).normalized;
+        // aplica offset para mirar um pouco abaixo
+        Vector2 aimPoint = (Vector2)mouseWorld + Vector2.down * aimYOffset;
+        Vector2 aimDir = (aimPoint - (Vector2)firePoint.position).normalized;
 
         // instancia a fireball
         GameObject fb = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
@@ -234,7 +241,7 @@ public class Player : MonoBehaviour {
         // aplica velocidade (Rigidbody2D deve ser Dynamic)
         Rigidbody2D rb = fb.GetComponent<Rigidbody2D>();
         if (rb != null) {
-            FireBall fbScript = fb.GetComponent<FireBall>();
+            FireBallPlayer fbScript = fb.GetComponent<FireBallPlayer>();
             float speed = fbScript != null ? fbScript.speed : 5f;
             rb.velocity = aimDir * speed;
         }
@@ -266,7 +273,7 @@ public class Player : MonoBehaviour {
         canAttack = true; // agora pode atacar dnv
     }
 
-    private void OnDrawGizmosSelected() {
+    private void OnDrawGizmosSelected() { // desenha o circulo de ataque para poder ver dentro da unity
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(GetAttackPosition(), attackRadius);
     }

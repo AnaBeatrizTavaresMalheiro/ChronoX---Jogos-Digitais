@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7730178458350355992}
   - component: {fileID: 1977236166420833017}
   - component: {fileID: 4180998473307501543}
-  m_Layer: 0
+  - component: {fileID: 5081103867011671157}
+  m_Layer: 15
   m_Name: Microwave
-  m_TagString: Untagged
+  m_TagString: MicroWave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 8002564296949391823, guid: cc6e8c7d20e45e846a6ebdc1a5445e6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -125,12 +126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a3d34fb1d249c48b297abb06e50472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  verticalDistance: 2
+  speed: 3
+  verticalDistance: 5
   visionRadius: 10
-  fireballPrefab: {fileID: 8803941938350576279, guid: 2f514a9c83aeaa140a408c569393bd2c, type: 3}
+  fireballPrefab: {fileID: 124203489129001821, guid: 6af802643821c1d4599c11453ed23274, type: 3}
   firePoint: {fileID: 3016482862465737988}
-  fireRate: 1
+  fireRate: 2
   aimYOffset: 1.5
 --- !u!50 &1977236166420833017
 Rigidbody2D:
@@ -147,7 +148,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -205,6 +206,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &5081103867011671157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737511659325670238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2905baac41709e14e8d604a72fa76770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidas: 2
+  invulnDuration: 0.5
+  dieDuration: 0.8
 --- !u!1 &6125491156541396607
 GameObject:
   m_ObjectHideFlags: 0

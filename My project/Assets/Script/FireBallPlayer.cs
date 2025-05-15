@@ -19,7 +19,7 @@ public class FireBallPlayer : MonoBehaviour
         if (col.CompareTag("MicroWave"))
         {
             // Exemplo: colide com o player
-            //col.GetComponent<MicroWaveHealth>()?.TakeDamage();
+            col.GetComponent<MicroWaveHealth>()?.TakeDamage();
         }
         // Destrói ao colidir em qualquer coisa
         Destroy(gameObject);
