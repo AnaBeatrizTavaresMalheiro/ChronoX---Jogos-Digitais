@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: "Assets/Scenes/Idade M\xE9dia.unity"
     guid: 6407975ac3dbc514286905f822184d82
   - enabled: 1
-    path: Assets/Scenes/Futuro.unity
-    guid: 1e064611b00f33140910f592c562705e
-  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 894d35cef63e6ef46b70ce214fca0a44
   - enabled: 1

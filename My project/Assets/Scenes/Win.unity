@@ -955,9 +955,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5643688281530842119, guid: e65fb20e56445624faa8dfbb4b7ea1ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643688281530842119, guid: e65fb20e56445624faa8dfbb4b7ea1ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643688281530842119, guid: e65fb20e56445624faa8dfbb4b7ea1ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 410216800}
+    - target: {fileID: 5643688281530842119, guid: e65fb20e56445624faa8dfbb4b7ea1ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5643688281530842119, guid: e65fb20e56445624faa8dfbb4b7ea1ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Victory

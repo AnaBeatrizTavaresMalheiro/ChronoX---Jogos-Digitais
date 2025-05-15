@@ -105792,7 +105792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &62001868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117044,7 +117044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046835159060634903, guid: d21565cd72c978341aecd9da1972b272, type: 3}
       propertyPath: maxVidas
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4046835159060634903, guid: d21565cd72c978341aecd9da1972b272, type: 3}
       propertyPath: heartScale

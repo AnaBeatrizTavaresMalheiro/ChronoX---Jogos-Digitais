@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class KnightHealth : MonoBehaviour {
+public class KnightHealth : MonoBehaviour
+{
 
     private Animator animator; // pode fazer as animações
 
@@ -18,20 +19,25 @@ public class KnightHealth : MonoBehaviour {
     [Header("Morte")]
     public float dieDuration; // duração da animação de morrer para o inimigo sumir depois
 
-    private void Awake() { 
+    private void Awake()
+    {
         animator = GetComponent<Animator>();
     }
 
-    void Start() {
-           
+    void Start()
+    {
+
     }
 
-    void Update() {
-        
+    void Update()
+    {
+
     }
 
-    public void TakeDamage() {
-        if(isDead || isInvulnerable) { // se já morreu ignora
+    public void TakeDamage()
+    {
+        if (isDead || isInvulnerable)
+        { // se já morreu ignora
             return;
         }
 
@@ -41,15 +47,18 @@ public class KnightHealth : MonoBehaviour {
 
         vidas--; // menos uma vida
 
-        if(vidas >= 1) { // quando so tiver recebido um ataque
+        if (vidas >= 1)
+        { // quando so tiver recebido um ataque
             animator.SetTrigger("hurt"); // animcao de tomar dano
         }
-        else { // quando for receber o segundo ataque
+        else
+        { // quando for receber o segundo ataque
             isDead = true; // morreu
             animator.SetBool("death", true); // animacao de morrer
 
             var ia = GetComponent<Knight>(); // desabilita todo o Kniht, nenhuma função dele funciona mais -> Update, Attack etc
-            if(ia != null) {
+            if (ia != null)
+            {
                 ia.enabled = false;
                 ia.CancelInvoke(); // cancela todos os Invokes pendentes no Knight
             }
@@ -59,12 +68,26 @@ public class KnightHealth : MonoBehaviour {
 
     }
 
-    private void EndInvulnerability() {
+    private void EndInvulnerability()
+    {
         isInvulnerable = false; // pode voltar a tomar dano
     }
 
-    private void Die() {
+    private void Die()
+    {
         Destroy(gameObject); // destruir o inimigo depois de morrer
+    }
+    
+    public void InstaKill() {
+        if(isDead) { // se ja tiver morto retorna
+            return;
+        }
+        
+        isDead = true;
+        isInvulnerable = true;
+
+        animator.SetBool("death", true); // animacao de morte
+        Invoke(nameof(Die), dieDuration);
     }
 
 }

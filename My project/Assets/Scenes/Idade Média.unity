@@ -48441,7 +48441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3904405849159832225, guid: 7ea3836c1c8a34a48944e24187678c2b, type: 3}
       propertyPath: phase_name
-      value: Futuro_teste
+      value: Futuro
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -92420,6 +92420,8 @@ MonoBehaviour:
   - speaker: 
     text: 
     characterSprite: {fileID: 0}
+  dialogoFase2: []
+  dialogoFase3: []
 --- !u!114 &1733470239
 MonoBehaviour:
   m_ObjectHideFlags: 0
