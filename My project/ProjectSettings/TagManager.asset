@@ -25,6 +25,10 @@ TagManager:
   - LaserLeft
   - Laser
   - MicroWave
+  - LaserMicroWave
+  - Robot
+  - Projectile
+  - FireBall
   layers:
   - Default
   - TransparentFX
@@ -42,7 +46,7 @@ TagManager:
   - Minotaur
   - Laser
   - MicroWave
-  - 
+  - Robot
   - 
   - 
   - 

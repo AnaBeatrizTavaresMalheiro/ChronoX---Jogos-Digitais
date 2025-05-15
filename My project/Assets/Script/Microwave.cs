@@ -24,12 +24,14 @@ public class MicroWave : MonoBehaviour
     private float fireCooldown = 0f;
     private Transform player;
     private Collider2D shooterCollider;
+    private Animator animator;  // Adiciona o Animator
 
     void Awake()
     {
         startPos       = transform.position;
         targetPos      = startPos + Vector2.up * verticalDistance;
         shooterCollider = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();  // Pega referência ao Animator
     }
 
     void Start()
@@ -68,6 +70,10 @@ public class MicroWave : MonoBehaviour
 
     void ShootAtPlayer()
     {
+        // Dispara a animação de ataque
+        if (animator != null)
+            animator.SetTrigger("attack");
+
         // 1) Calcula o centro do collider do player
         Vector2 aimPoint = player.position;
         Collider2D playerCol = player.GetComponent<Collider2D>();
